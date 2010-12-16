@@ -1,0 +1,38 @@
+HTML5 Boilerplate for MObile http://html5boilerplate.com
+v0.1 : August 10th, 2010 - Alpha testing
+
+License:
+
+Major components:
+
+Modernizr: MIT/BSD license
+jQuery: MIT/GPL license
+DD_belatedPNG: MIT license
+YUI Profiling: BSD license
+HTML5Doctor CSS reset: Creative Commons 3.0 BY
+CSS Reset Reloaded: Public Domain
+Everything else:
+
+The Unlicense (aka: public domain)
+Summary:
+
+This is a set of features made specifically for mobile development, with following included:
+
+HTML5 offline caching for smartphone
+Home page icon for Android
+Home page icon for iPhone3/4
+Optimized Viewport Meta for iPhone and Android
+Mobile helper class and media query
+Prevent text resize in webkit browser
+Mobile IE meta
+Balckberry meta data
+Nokia home screen icon meta
+Meta to hide webkit chrome
+iPhone start screen in full screen mode
+SEO - avoid duplicated content
+Mobile bookmark bubble
+Mobile CSS hacks
+Mobile JavaScript events default
+Mobile sitemap
+Browser Database Wrapper API
+User Agent Detection 	
