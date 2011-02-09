@@ -72,7 +72,7 @@ AddType font/woff                      woff
 # assorted types                                      
 AddType image/vnd.microsoft.icon       ico
 AddType image/webp                     webp
-AddType text/cache-manifest            manifest
+AddType text/cache-manifest            appcache manifest
 AddType text/x-component               htc
 AddType application/x-chrome-extension crx
 AddType application/x-xpinstall        xpi
