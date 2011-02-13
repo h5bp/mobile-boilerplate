@@ -1,4 +1,4 @@
-#HTML5 Boilerplate for MObile http://html5boilerplate.com
+#Mobile HTML5 Boilerplate http://html5boilerplate.com
 v0.1 : August 10th, 2010 - Alpha testing
 
 ##Summary:
@@ -34,6 +34,7 @@ This is a set of features made specifically for mobile development, with followi
 7. textarea autogrow (http://bit.ly/4D1NnN)
 8. Hide webkit chrome
 9. Load Stylesheet
+10. Firebug lite
 
 ###Server:
 1. Added Blackberry MIME type for Apache, IIS server (http://bit.ly/gUBtIE)
