@@ -1,58 +1,43 @@
 <!doctype html>
-<!--[if IEMobile]> <html class="no-js ie-mobile" manifest="default.appcache"> <![endif]—-> 
+<!--[if IEMobile]> <html class="no-js ie-mobile" manifest="default.appcache"> <![endif]--> 
 <!--[if !IEMobile]><!--> <html class="no-js" manifest="default.appcache"> <!--<![endif]>-->
 <head>
   <meta charset="utf-8">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
   <meta name="description" content="">
   <meta name="author" content="">
   
-  <!-- Mobile viewport optimized: http://bit.ly/9AKHaZ -->
+  <!-- Mobile viewport optimization -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"/>
   <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   
-  <!-- Web app will display in full screen mode when launched from the Web Clip icon -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  
-  <!-- Makes status bar partially transparent and additionally removes it from the document flow -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  
-  <!-- full screen startup -->
-  <link rel="apple-touch-startup-image" href="images/l/myCustomStartupGraphic.png">
-	
-  <!-- Replace apple-touch-icon.png in the root of your domain and delete these references -->
-  
-  <!-- iPhone, Android Home Screen icon -->
+  <!-- Home screen icon -->
   <link rel="apple-touch-icon-precomposed" media="screen and (max-resolution: 80dpi)" href="images/h/iphone4-touch-icon.png">
   <link rel="apple-touch-icon-precomposed" media="screen and (min-resolution: 150dpi)" href="images/l/apple-touch-icon.png">
-  
-  <!-- Nokia icon -->
   <link rel="shortcut icon" href="images/l/apple-touch-icon.png">
   
-  <!-- BlackBerry and some others use a meta tag for defining mobile-friendly documents -->
-  <meta name="HandheldFriendly" content="True">
+  <!-- iOS web app, deletable if not needed -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-startup-image" href="images/l/myCustomStartupGraphic.png">
   
-  <!-- Windows-proprietary meta tag -->
-  <meta name="MobileOptimized" content="320"/>
-  
-  <!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
   <meta http-equiv="cleartype" content="on">
   
-  <!-- Specifically targeting mobile browsers -->
-  <link rel="stylesheet" href="css/style.css?v=1">
+  <!-- For mobile SEO: avoid duplicated content -->
+  <link rel="alternate" media="handheld" href="" />
   
-  <!-- For SEO: avoid duplicated content -->
-  <link rel="alternate" media="handheld" href="" /> 
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=1">
 
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/modernizr-1.5.min.js"></script>
-  
-  <!-- Debugger - remove for production -->
-  <script src="https://getfirebug.com/firebug-lite.js"></script>	
+
 </head>
 
 <body>
@@ -71,21 +56,22 @@
     </footer>
   </div> <!--! end of #container -->
 
-
   <!-- JavaScript at the bottom for fast page loading -->
-
+  
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
-
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>	
+  
   <script src="js/jmobile-lite.js?v=1"></script>
-	
+
+  <!-- Debugger - remove for production -->
+  <script src="https://getfirebug.com/firebug-lite.js"></script>
+  
   <!-- yui profiler and profileviewer - remove for production -->
   <script src="js/profiling/yahoo-profiling.min.js"></script>
   <script src="js/profiling/config.js?v=1"></script>
   <!-- end profiling code -->
-
-
+  
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
