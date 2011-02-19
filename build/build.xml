@@ -220,7 +220,8 @@
                      -js.delete,
                      -css,
                      -html,
-                     -htmlclean"/>
+                     -htmlclean,
+					 -manifest"/>
 
     <target name="-text.production"
             depends="-rev,
@@ -235,7 +236,8 @@
                      -strip-console.log,
                      -css,
                      -html,
-                     -htmlclean"/>
+                     -htmlclean,
+					 -manifest"/>
 
     <!-- Target: buildkit -->
     <target name="-buildkit.dev"
@@ -259,7 +261,8 @@
                      -html,
                      -htmlbuildkit,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <target name="-buildkit.production"
             depends="-rev,
@@ -276,7 +279,8 @@
                      -html,
                      -htmlbuildkit,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <!-- Target: build -->
     <target name="-build.dev"
@@ -300,7 +304,8 @@
                      -html,
                      -htmlclean,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <target name="-build.production"
             depends="-rev,
@@ -317,7 +322,8 @@
                      -html,
                      -htmlclean,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <!-- Target: minify -->
     <target name="-minify.dev"
@@ -341,7 +347,8 @@
                      -html,
                      -htmlcompress,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
     <target name="-minify.production"
             depends="-rev,
@@ -358,7 +365,8 @@
                      -html,
                      -htmlcompress,
                      -imagespng,
-                     -imagesjpg"/>
+                     -imagesjpg,
+					 -manifest"/>
 
 	<!--
 	*************************************************
@@ -558,6 +566,12 @@
 		<!--[! use comments like this one to avoid having them get minified -->
 	</target>
 	
+	<target name="-manifest">
+		<replace>
+			<replacefilter token="default.appcache" value="default-${build.number}.appcache" />
+			<fileset dir="./${dir.publish}/" includes="${page-files}"/>
+		</replace>
+	</target>
 	
 	<target name="-htmlclean">
 		<apply executable="java" parallel="false" force="true" dest="./${dir.publish}/" >
