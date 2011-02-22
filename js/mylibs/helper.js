@@ -57,6 +57,6 @@ function loadStylesheet(filename) {
 
 
 function splashScreen() {
-  var filename = navigator.platform === 'iPad' ? 'h/myCustomStartupGraphic.png' : 'l/myCustomStartupGraphic.png';
-  document.write('<link rel="apple-touch-startup-image" href="/images/' + filename + '" />' );
+  var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
+  document.write('<link rel="apple-touch-startup-image" href="/images/' + filename + 'splash.png" />' );
 }
