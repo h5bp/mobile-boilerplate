@@ -571,6 +571,7 @@
 			<replacefilter token="default.appcache" value="default-${build.number}.appcache" />
 			<fileset dir="./${dir.publish}/" includes="${page-files}"/>
 		</replace>
+		<move file="./${dir.publish}/default.appcache" tofile="./${dir.publish}/default-${build.number}.appcache"/>
 	</target>
 	
 	<target name="-htmlclean">
