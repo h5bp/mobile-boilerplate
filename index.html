@@ -1,6 +1,7 @@
 ﻿<!doctype html>
-<!--[if IEMobile]> <html class="no-js ie-mobile" manifest="default.appcache?v=1"> <![endif]--> 
-<!--[if !IEMobile]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]>-->
+<!--[if IEMobile 7 ]>    <html class="no-js ie7" manifest="default.appcache?v=1"> <![endif]-->
+<!--[if (gte IEMobile 9)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
 
@@ -17,14 +18,14 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   
   <!-- Home screen icon -->
-  <link rel="apple-touch-icon-precomposed" media="screen and (max-resolution: 80dpi)" href="images/h/iphone4-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" media="screen and (max-resolution: 80dpi)" href="images/h/apple-touch-icon.png">
   <link rel="apple-touch-icon-precomposed" media="screen and (min-resolution: 150dpi)" href="images/l/apple-touch-icon.png">
   <link rel="shortcut icon" href="images/l/apple-touch-icon.png">
   
   <!-- iOS web app, deletable if not needed -->
   <!--<meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-startup-image" href="images/l/myCustomStartupGraphic.png">-->
+  <link rel="apple-touch-startup-image" href="images/l/splash.png">-->
   
   <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
   <meta http-equiv="cleartype" content="on">
@@ -60,7 +61,10 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.0.js"%3E%3C/script%3E'))</script>
   
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/respond.js"></script>
   <script src="js/script.js?v=1"></script>
+  <!-- end concatenated and minified scripts-->
 
   <!-- Debugger - remove for production -->
   <script src="https://getfirebug.com/firebug-lite.js"></script>
