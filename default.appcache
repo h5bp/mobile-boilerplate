@@ -5,6 +5,6 @@ images/h/apple-touch-icon.png
 images/h/myCustomStartupGraphic.png
 css/style.css
 js/libs/jquery-1.5.0.min.js
-js/libs/modernizr-1.6.min.js
+js/libs/modernizr-1.7.min.js
 
 NETWORK:
