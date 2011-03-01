@@ -1,6 +1,7 @@
 ﻿<!doctype html>
-<!--[if IEMobile 7 ]>    <html class="no-js ie7" manifest="default.appcache?v=1"> <![endif]-->
-<!--[if (gte IEMobile 9)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
+<!-- conditional comment for mobile ie7 -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -8,7 +9,7 @@
   <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Mobile HTML5 Boilerplate</title>
   <meta name="description" content="">
   <meta name="author" content="">
   
@@ -18,27 +19,28 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   
   <!-- Home screen icon -->
-  <link rel="apple-touch-icon-precomposed" media="screen and (max-resolution: 80dpi)" href="images/h/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" media="screen and (min-resolution: 150dpi)" href="images/l/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" media="screen and (max-resolution: 80dpi)" href="images/l/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" media="screen and (min-resolution: 150dpi)" href="images/h/apple-touch-icon.png">
   <link rel="shortcut icon" href="images/l/apple-touch-icon.png">
   
-  <!-- iOS web app, deletable if not needed -->
-  <!--<meta name="apple-mobile-web-app-capable" content="yes">
+  <!--iOS web app, deletable if not needed -->
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-startup-image" href="images/l/splash.png">-->
+  <link rel="apple-touch-startup-image" href="images/l/splash.png"> -->
+  
+  <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
   
   <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
   <meta http-equiv="cleartype" content="on">
   
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
   
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css?v=1">
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
   <script src="js/libs/modernizr-1.7.min.js"></script>
-
 </head>
 
 <body>
@@ -49,7 +51,9 @@
     </header>
     
     <div id="main">
-
+	
+		
+	
     </div>
     
     <footer>
@@ -67,7 +71,7 @@
   <!-- end concatenated and minified scripts-->
 
   <!-- Debugger - remove for production -->
-  <!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
   
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
