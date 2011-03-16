@@ -3,6 +3,7 @@
   xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
     <url>
         <!--<loc>http://mobile.example.com/index.html</loc>-->
+		
         <mobile:mobile/>
     </url>
 </urlset>

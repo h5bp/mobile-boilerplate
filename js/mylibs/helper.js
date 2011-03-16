@@ -4,6 +4,15 @@
  * by Shi Chuan
  */
  
+ 
+// Hide URL Bar
+// http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
+function hideURLbar(){
+	/mobile/i.test(navigator.userAgent) && !pageYOffset && !location.hash && setTimeout(function () {
+	window.scrollTo(0, 1);
+	}, 1000);
+} 
+ 
 // Autogrow
 (function( $ ){
 
@@ -38,11 +47,6 @@
   };
 })( jQuery );
 
-
-// Hide URL Bar
-function hideURLbar(){
-	setTimeout(scrollTo, 0, 0, 1);
-}
 
 
 //loadStylesheet(file) usage: loadStylesheet(filename.css);

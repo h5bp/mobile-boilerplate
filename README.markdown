@@ -6,21 +6,23 @@ v0.91 (code named Secret Diary)
 This is a set of features made specifically for mobile development, with following included:
 
 ###Markup:
-1. Home page icon for Android,iOS,Nokia (http://bit.ly/4bzrUX)
-2. Mobile IE conditional switch
-3. Cross browser viewport optimization for Android,iOS,IE,Nokia,Blackberry (http://bit.ly/c2b5GG)
-4. Mobile IE better Font rendering
+1. Home screen icon (Android, iOS, Symbian) (http://bit.ly/4bzrUX)
+2. CSS class target IE Mobile 7
+3. Cross browser viewport optimization (Android, iOS, Mobile IE, Blackberry) (http://bit.ly/c2b5GG)
+4. Optimized viewport scaling (Android, iOS, Mobile IE, Blackberry)
+4. IE Mobile better Font rendering
 5. Prevent scaling (http://bit.ly/blMIej)
 6. iPhone full screen mode (http://bit.ly/c2b5GG)
 7. SEO - avoid duplicated content
 
 ###CSS:
-1. Mobile helper class and media query
+1. Mobile helper class
 2. Prevent text resize in ie/webkit browser
 3. Prevent callout
 4. HTML5 contenteditable attribute on mobile
 5. S60 3.x and 5.0 devices which animated gif fix
 6. Text overflow with ellipsis
+7. Mobile optimized default CSS
 
 ###JavaScript:
 1. Touch/Gesture Events events (touchstart touchmove touchend touchcancel, gesturestart gesturechange gestureend)
@@ -33,6 +35,7 @@ This is a set of features made specifically for mobile development, with followi
 8. Hide webkit chrome
 9. Load Stylesheet
 10. Firebug lite debugger
+11. Media queries for low end smartphone
 
 ###Server:
 1. Added Blackberry MIME type for Apache, IIS server (http://bit.ly/gUBtIE)
@@ -54,15 +57,15 @@ This is a set of features made specifically for mobile development, with followi
 ##License:
 
 ###Major components:
-Respond.js: Dual licensed under the MIT or GPL Version 2 licenses
-Bookmark bubble library: Apache License, Version 2.0
-Web Storage Portability Layer: Apache License, Version 2.0
-Modernizr: MIT/BSD license
-jQuery: MIT/GPL license
-DD_belatedPNG: MIT license
-YUI Profiling: BSD license
-HTML5Doctor CSS reset: Creative Commons 3.0 BY
-CSS Reset Reloaded: Public Domain
+Respond.js: Dual licensed under the MIT or GPL Version 2 licenses<br />
+Bookmark bubble library: Apache License, Version 2.0<br />
+Web Storage Portability Layer: Apache License, Version 2.0<br />
+Modernizr: MIT/BSD license<br />
+jQuery: MIT/GPL license<br />
+DD_belatedPNG: MIT license<br />
+YUI Profiling: BSD license<br />
+HTML5Doctor CSS reset: Creative Commons 3.0 <br />
+CSS Reset Reloaded: Public Domain 
 
 ###Everything else:
 
