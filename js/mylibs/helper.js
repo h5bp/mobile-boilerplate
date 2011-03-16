@@ -11,7 +11,7 @@ function hideURLbar(){
 	/mobile/i.test(navigator.userAgent) && !pageYOffset && !location.hash && setTimeout(function () {
 	window.scrollTo(0, 1);
 	}, 1000);
-} 
+}
  
 // Autogrow
 (function( $ ){
@@ -47,20 +47,8 @@ function hideURLbar(){
   };
 })( jQuery );
 
-
-
-//loadStylesheet(file) usage: loadStylesheet(filename.css);
-function loadStylesheet(filename) {
-	var link = $("<link>");
-	link.attr({
-			rel: 'stylesheet',
-			href: filename
-	});
-	$("head").append( link );
-}
-
-
 function splashScreen() {
   var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
   document.write('<link rel="apple-touch-startup-image" href="/images/' + filename + 'splash.png" />' );
 }
+
