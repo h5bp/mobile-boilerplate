@@ -83,7 +83,7 @@ var coordinates = [];
 // iOS Startup Image
 function iosStrtSrn() {
   var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
-  document.write('<link rel="apple-touch-startup-image" href="/images/' + filename + 'splash.png" />' );
+  document.write('<link rel="apple-touch-startup-image" href="/img/' + filename + 'splash.png" />' );
 }
 
 
