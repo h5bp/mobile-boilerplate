@@ -1,9 +1,9 @@
-/*!
- * MBP - Moible boilerplate helper functions: 
+/*
+ * MBP - Mobile boilerplate helper functions
  */
 
  
-var MBP = MBP || {}; 
+window.MBP = window.MBP || {}; 
  
 // Hide URL Bar for iOS
 // http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
@@ -53,7 +53,7 @@ MBP.fastButton.prototype.onClick = function(event) {
     this.reset();
     this.handler(event);
     if(event.type == 'touchend') {
-		preventGhostClick(this.startX, this.startY);
+		MBP.preventGhostClick(this.startX, this.startY);
     }
     this.element.style.backgroundColor = "";
 };
@@ -62,25 +62,25 @@ MBP.fastButton.prototype.reset = function() {
     document.body.removeEventListener('touchmove', this, false);
     this.element.style.backgroundColor = "";
 };
-function preventGhostClick(x, y) {
-    coordinates.push(x, y);
-    window.setTimeout(gpop, 2500);
+MBP.preventGhostClick = function (x, y) {
+    MBP.coords.push(x, y);
+    window.setTimeout(function (){
+    	MBP.coords.splice(0, 2);
+    }, 2500);
 };
-function gpop() {
-	coordinates.splice(0, 2);
-};
-function gonClick(event) {
-	for(var i = 0; i < coordinates.length; i += 2) {
-		var x = coordinates[i];
-        var y = coordinates[i + 1];
+;
+MBP.ghostClickHandler = function (event) {
+	for(var i = 0, len = MBP.coords.length; i < len; i += 2) {
+		var x = MBP.coords[i];
+        var y = MBP.coords[i + 1];
         if(Math.abs(event.clientX - x) < 25 && Math.abs(event.clientY - y) < 25) {
 			event.stopPropagation();
             event.preventDefault();
         }
     }
 };
-document.addEventListener('click', gonClick, true);
-var coordinates = [];
+document.addEventListener('click', MBP.ghostClickHandler, true);
+MBP.coords = [];
 
 
 // iOS Startup Image
