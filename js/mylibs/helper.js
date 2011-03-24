@@ -1,12 +1,14 @@
 /*!
- * mbp - Moible boilerplate helper functions: 
- * http://www.blog.highub.com/
- * by Shi Chuan
+ * MBP - Moible boilerplate helper functions: 
  */
+
+ 
+var MBP = MBP || {}; 
  
 // Hide URL Bar for iOS
 // http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
-function hideUrlBar() {
+
+MBP.hideUrlBar = function () {
 	/mobile/i.test(navigator.userAgent) && !pageYOffset && !location.hash && setTimeout(function () {
 	window.scrollTo(0, 1);
 	}, 1000);
@@ -15,14 +17,15 @@ function hideUrlBar() {
 
 // Fast Buttons
 // http://code.google.com/mobile/articles/fast_buttons.html
-function fastButton(element, handler) {
+
+MBP.fastButton = function (element, handler) {
     this.element = element;
     this.handler = handler;
 	element.addEventListener('touchstart', this, false);
 	element.addEventListener('click', this, false);
 };
 
-fastButton.prototype.handleEvent = function(event) {
+MBP.fastButton.prototype.handleEvent = function(event) {
     switch (event.type) {
 		case 'touchstart': this.onTouchStart(event); break;
         case 'touchmove': this.onTouchMove(event); break;
@@ -31,7 +34,7 @@ fastButton.prototype.handleEvent = function(event) {
     }
 };
 
-fastButton.prototype.onTouchStart = function(event) {
+MBP.fastButton.prototype.onTouchStart = function(event) {
     event.stopPropagation();
     this.element.addEventListener('touchend', this, false);
 	document.body.addEventListener('touchmove', this, false);
@@ -40,12 +43,12 @@ fastButton.prototype.onTouchStart = function(event) {
     this.element.style.backgroundColor = "rgba(0,0,0,.7)";
 };
 
-fastButton.prototype.onTouchMove = function(event) {
+MBP.fastButton.prototype.onTouchMove = function(event) {
     if(Math.abs(event.touches[0].clientX - this.startX) > 10 || Math.abs(event.touches[0].clientY - this.startY) > 10) {
 		this.reset();
     }
 };
-fastButton.prototype.onClick = function(event) {
+MBP.fastButton.prototype.onClick = function(event) {
     event.stopPropagation();
     this.reset();
     this.handler(event);
@@ -54,7 +57,7 @@ fastButton.prototype.onClick = function(event) {
     }
     this.element.style.backgroundColor = "";
 };
-fastButton.prototype.reset = function() {
+MBP.fastButton.prototype.reset = function() {
     this.element.removeEventListener('touchend', this, false);
     document.body.removeEventListener('touchmove', this, false);
     this.element.style.backgroundColor = "";
@@ -81,42 +84,34 @@ var coordinates = [];
 
 
 // iOS Startup Image
-function iosStrtSrn() {
+// https://github.com/shichuan/mobile-html5-boilerplate/issues#issue/2
+
+MBP.splash = function () {
   var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
   document.write('<link rel="apple-touch-startup-image" href="/img/' + filename + 'splash.png" />' );
 }
 
 
 // Autogrow
-(function( $ ){
+// http://googlecode.blogspot.com/2009/07/gmail-for-mobile-html5-series.html
 
-  $.fn.growingTextarea = function( options ) {
-	
-	var settings = {
-      'lineHeight' : 12
-    };
-	
-    return this.each(function() {
-		if ( options ) { 
-			$.extend( settings, options );
+MBP.autogrow = function (element, lh) {
+	var setLineHeight = (lh) ? 11 : 12;
+	var textLineHeight = element.style.lineHeight;
+	if (textLineHeight.indexOf("px") == -1) {
+		textLineHeight = setLineHeight;
+	} else {
+		textLineHeight = parseInt(textLineHeight, 10);
+	}
+	element.style.overflow = "hidden";
+	element.onkeyup = function(e){
+		var newHeight = this.scrollHeight;
+		var currentHeight = this.clientHeight;
+		if (newHeight > currentHeight) {
+			this.style.height = newHeight + 3 * textLineHeight + "px";
 		}
-		var $this = $(this);
-		var textLineHeight = $this.css("line-height");
-		
-		if (textLineHeight.indexOf("px") == -1) {
-			textLineHeight = settings.lineHeight;
-		} else {
-			textLineHeight = parseInt(textLineHeight, 10);
-		}
-		$this.css('overflow','hidden');
-		$this.keyup(function(e){
-			var newHeight = $this.attr("scrollHeight");
-			var currentHeight = $this.attr("clientHeight");
-			if (newHeight > currentHeight) {
-				$this.css('height', newHeight + 3 * textLineHeight + 'px');
-			}
-		});
-    });
+	}
+}
 
-  };
-})( jQuery );
+
+
