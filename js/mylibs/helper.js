@@ -96,21 +96,25 @@ MBP.splash = function () {
 // http://googlecode.blogspot.com/2009/07/gmail-for-mobile-html5-series.html
 
 MBP.autogrow = function (element, lh) {
-    var setLineHeight = (lh) ? 11 : 12;
-    var textLineHeight = element.style.lineHeight;
-    if (textLineHeight.indexOf("px") == -1) {
-        textLineHeight = setLineHeight;
-    } else {
-        textLineHeight = parseInt(textLineHeight, 10);
-    }
-    element.style.overflow = "hidden";
-    element.onkeyup = function(e){
-        var newHeight = this.scrollHeight;
-        var currentHeight = this.clientHeight;
+    
+    function handler(e){
+        var newHeight = this.scrollHeight,
+            currentHeight = this.clientHeight;
         if (newHeight > currentHeight) {
             this.style.height = newHeight + 3 * textLineHeight + "px";
         }
     }
+    
+    var setLineHeight = (lh) ? 11 : 12,
+        textLineHeight = element.currentStyle ? element.currentStyle.lineHeight : 
+                         getComputedStyle(element, null).lineHeight;
+                         
+    textLineHeight = (textLineHeight.indexOf("px") == -1) ? setLineHeight :
+                     parseInt(textLineHeight, 10);
+
+    element.style.overflow = "hidden";
+    element.addEventListener ? element.addEventListener('keyup', handler, false) :
+                               element.attachEvent('onkeyup', handler);
 }
 
 
