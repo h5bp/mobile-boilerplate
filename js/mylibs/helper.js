@@ -105,7 +105,7 @@ MBP.autogrow = function (element, lh) {
         }
     }
     
-    var setLineHeight = (lh) ? 11 : 12,
+    var setLineHeight = (lh) ? lh : 12,
         textLineHeight = element.currentStyle ? element.currentStyle.lineHeight : 
                          getComputedStyle(element, null).lineHeight;
                          
