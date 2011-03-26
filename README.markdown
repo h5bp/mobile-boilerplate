@@ -13,7 +13,6 @@ This is a set of features made specifically for mobile development, with followi
 4. IE Mobile better Font rendering
 5. Prevent scaling (http://bit.ly/blMIej)
 6. iPhone full screen mode (http://bit.ly/c2b5GG)
-7. SEO - avoid duplicated content
 
 ###CSS:
 1. Mobile helper class
@@ -25,17 +24,12 @@ This is a set of features made specifically for mobile development, with followi
 7. Mobile optimized default CSS
 
 ###JavaScript:
-1. Touch/Gesture Events events (touchstart touchmove touchend touchcancel, gesturestart gesturechange gestureend)
-2. Orientationchange events (portrait landscape)
-3. Tap events (tap taphold)
-4. Swipe events (swipe swipeleft swiperight)
-5. Scroll events (scrollstart scrollstop)
-6. Cross browser CSS media queries
-7. Textarea autogrow (http://bit.ly/4D1NnN)
-8. Hide webkit chrome
-9. Load Stylesheet
-10. Firebug lite debugger
-11. Media queries for low end smartphone
+1. Cross browser CSS media queries
+2. Textarea autogrow (http://bit.ly/4D1NnN)
+3. Hide webkit chrome
+4. Insant button
+5. Firebug lite debugger
+6. Media queries for low end smartphone
 
 ###Server:
 1. Added Blackberry MIME type for Apache, IIS server (http://bit.ly/gUBtIE)
@@ -57,13 +51,11 @@ This is a set of features made specifically for mobile development, with followi
 ##License:
 
 ###Major components:
-Respond.js: Dual licensed under the MIT or GPL Version 2 licenses<br />
+css3-mediaqueries.js: Public Domain<br />
 Bookmark bubble library: Apache License, Version 2.0<br />
 Web Storage Portability Layer: Apache License, Version 2.0<br />
 Modernizr: MIT/BSD license<br />
 jQuery: MIT/GPL license<br />
-DD_belatedPNG: MIT license<br />
-YUI Profiling: BSD license<br />
 HTML5Doctor CSS reset: Creative Commons 3.0 <br />
 CSS Reset Reloaded: Public Domain 
 
