@@ -38,7 +38,7 @@
 	 
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="../js/libs/modernizr.js"></script>
+  <script src="../js/libs/modernizr-1.7.min.js"></script>
 	<style>
   button { margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%; line-height: 1; font-family: inherit; text-align: left; }
 	div.wrapper { width: 940px; margin: 0 auto; padding: 0 30px 36px; position: relative; }
@@ -49,7 +49,7 @@
 	div.page-header { padding: 0 0 8px; margin: 18px 0; border-bottom: 1px solid #ddd; }
 	div.page-header h1 { padding: 0; margin: 0; font-size: 24px; line-height: 27px; letter-spacing: 0; }		
   .awesome, .awesome:visited {
-    background: #222; 
+    background: #222 url(/images/alert-overlay.png) repeat-x; 
     display: inline-block; 
     padding: 5px 10px 6px; 
     color: #fff; 
@@ -126,16 +126,17 @@
   <![endif]-->
 	
 	<script>
-	$("#contactus").hide();
-	
-	var btn = document.getElementById("btn");
-	new MBP.fastButton(btn,showForm);	
 	function showForm() {
 		$("#contactus").show();
 	}
 	
+	$("#contactus").hide();
+	
+	var btn = document.getElementById("btn");
+	new MBP.fastButton(btn,showForm);	
+
 	var contact = document.getElementById("contact");
-	new MBP.autogrow(contact);
+	MBP.autogrow(contact);
 	
 	</script>
   <!-- end concatenated and minified scripts-->
