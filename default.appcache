@@ -1,15 +1,17 @@
 CACHE MANIFEST
 # version 1
-images/l/apple-touch-icon.png
-images/l/myCustomStartupGraphic.png
-images/h/apple-touch-icon.png
-images/h/myCustomStartupGraphic.png
+img/l/apple-touch-icon.png
+img/l/apple-touch-icon-precomposed.png
+img/l/splash.png
+img/m/apple-touch-icon.png
+img/h/apple-touch-icon.png
+img/h/splash.png
 css/style.css
-js/libs/jquery-1.5.0.min.js
+js/libs/jquery-1.5.1.min.js
 js/libs/modernizr-1.7.min.js
+js/libs/css3-mediaqueries.js
 
 NETWORK:
 #http://example.com/api/
-
 
 FALLBACK:
