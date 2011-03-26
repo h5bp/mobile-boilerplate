@@ -1,50 +1,50 @@
-#Mobile Boilerplate (Beta) http://html5boilerplate.com
-v0.91 (code named Secret Diary)
+#Mobile Boilerplate http://html5boilerplate.com
+v1.0 (code named Secret Diary)
 
 ##Summary:
 
 This is a set of features made specifically for mobile development, with following included:
 
 ###Markup:
-1. Home screen icon (Android, iOS, Symbian) (http://bit.ly/4bzrUX)
-2. CSS class target IE Mobile 7
-3. Cross browser viewport optimization (Android, iOS, Mobile IE, Blackberry) (http://bit.ly/c2b5GG)
-4. Optimized viewport scaling (Android, iOS, Mobile IE, Blackberry)
-4. IE Mobile better Font rendering
-5. Prevent scaling (http://bit.ly/blMIej)
-6. iPhone full screen mode (http://bit.ly/c2b5GG)
+Home screen icon (Android, iOS, Symbian)
+CSS class target IE Mobile 7
+Cross browser viewport optimization (Android, iOS, Mobile IE, Blackberry) 
+Optimized viewport scaling (Android, iOS, Mobile IE, Blackberry)
+IE Mobile better Font rendering
+Prevent scaling 
+iPhone full screen mode 
 
 ###CSS:
-1. Mobile helper class
-2. Prevent text resize in ie/webkit browser
-3. Prevent callout
-4. HTML5 contenteditable attribute on mobile
-5. S60 3.x and 5.0 devices which animated gif fix
-6. Text overflow with ellipsis
-7. Mobile optimized default CSS
+Mobile helper class
+Prevent text resize in ie/webkit browser
+Prevent callout
+HTML5 contenteditable attribute on mobile
+S60 3.x and 5.0 devices which animated gif fix
+Text overflow with ellipsis
+Mobile optimized default CSS
 
 ###JavaScript:
-1. Cross browser CSS media queries
-2. Textarea autogrow (http://bit.ly/4D1NnN)
-3. Hide webkit chrome
-4. Insant button
-5. Firebug lite debugger
-6. Media queries for low end smartphone
+Cross browser CSS media queries
+Textarea autogrow 
+Hide webkit chrome
+Insant button
+Firebug lite debugger
+Media queries for low end smartphone
 
 ###Server:
-1. Added Blackberry MIME type for Apache, IIS server (http://bit.ly/gUBtIE)
-2. Added Nokia MIME type
-3. Prevent Transcoding
-4. Mobile site redirection
+Added Blackberry MIME type 
+Added Nokia MIME type
+Prevent Transcoding
+Mobile site redirection
 
 ###General:
-1. HTML5 offline caching for smartphone (http://bit.ly/1yqPo2)
-2. Mobile sitemap (http://bit.ly/uom43)
-3. Mobile bookmark bubble (http://bit.ly/b1dh6a)
-4. Browser Database Wrapper API (http://bit.ly/TJXll)
-5. User Agent Detection (http://bit.ly/9deoAd)
-6. GA for low end mobile devices (http://bit.ly/aMzwkO)
-7. Mobile build tool
+HTML5 offline caching for smartphone 
+Mobile sitemap 
+Mobile bookmark bubble 
+Browser Database Wrapper API 
+User Agent Detection 
+GA for low end mobile devices 
+Mobile build tool
 
 
 
