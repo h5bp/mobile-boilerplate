@@ -469,7 +469,9 @@ AddType application/vnd.symbian.install 	sis
 #</IfModule>
 
 
-# mobile redirect script
+# Mobile Redirection Script
+# Detect Mobile Browser - http://detectmobilebrowser.com/
+
 #RewriteEngine On
 #RewriteBase /
 #RewriteCond %{HTTP_USER_AGENT} android|avantgo|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge\ |maemo|midp|mmp|opera\ m(ob|in)i|palm(\ os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows\ (ce|phone)|xda|xiino [NC,OR]
