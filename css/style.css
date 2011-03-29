@@ -58,12 +58,6 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 
 input, select { vertical-align: middle; }
 
-/* Mobile phones will adjust text size when the screen orientation changes unless you include a special CSS parameter */
-html {
-    -webkit-text-size-adjust: none;
-	-ms-text-size-adjust: none;
-}
-
 
 
 /**
@@ -186,6 +180,7 @@ textarea.contenteditable {-webkit-appearance: none;}
 .gifhidden {position: absolute; left: -100%;}
 
 
+
 /* Primary Styles
    Author:
 */
@@ -199,6 +194,11 @@ textarea.contenteditable {-webkit-appearance: none;}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 569px) {
 /* Styles */
+  /* Prevent iOS and Win Mobile from mobile-optimize the text for you: j.mp/textsizeadjust */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
