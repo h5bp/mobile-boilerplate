@@ -226,9 +226,10 @@ textarea.contenteditable {-webkit-appearance: none;}
 /* Styles */
 }
 
-/* iPhone 4 and high pixel ratio devices ----------- */
+/* iPhone 4, Opera Mobile 11 and high pixel ratio devices ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (-o-min-device-pixel-ratio : 3/2),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
