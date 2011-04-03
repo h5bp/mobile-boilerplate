@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="css/style.css?v=1">
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src="js/libs/modernizr-custom.js"></script>
 </head>
 
 <body>
@@ -69,16 +69,19 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
   <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
   
-  <!--[if IEMobile 7 ]>
-  <script src="js/libs/css3-mediaqueries-min.js"></script>
-  <![endif]-->
-
-  <!-- scripts concatenated and minified via ant build script-->
+  <script>
+    yepnope({
+      test : Modernizr.mq('(min-width)'),
+      nope : ['js/libs/respond.min.js']
+    });
+  </script>
+  
+  <!-- scripts concatenated and minified via ant build script -->
   <script src="js/script.js"></script>
   <!-- end concatenated and minified scripts-->
   
   <!-- Debugger - remove for production -->
-  <!--<script src="https://getfirebug.com/firebug-lite.js"></script>-->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
   
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
   <script>
