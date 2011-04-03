@@ -5,11 +5,37 @@
 
 window.MBP = window.MBP || {}; 
 
+// Fix for iPhone viewport scale bug 
+// http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+
+MBP.scaleFix = function () {
+  var i;
+  var metas = document.getElementsByTagName('meta');
+    if (navigator.userAgent.match(/iPhone/i)) {
+      for (i=0; i<metas.length; i++) {
+        if (metas[i].name == "viewport") {
+          metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+        }
+      }
+      document.getElementsByTagName('body')[0].addEventListener("gesturestart", MBP.gestureStart, false);
+    }
+};
+
+MBP.gestureStart = function () {
+    var i;
+    var metas = document.getElementsByTagName('meta');
+    for (i=0; i<metas.length; i++) {
+        if (metas[i].name == "viewport") {
+          metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+        }
+    }
+}
+
 // Hide URL Bar for iOS
 // http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/
 
 MBP.hideUrlBar = function () {
-    /mobile/i.test(navigator.userAgent) && !pageYOffset && !location.hash && setTimeout(function () {
+    /iPhone/i.test(navigator.userAgent) && !pageYOffset && !location.hash && setTimeout(function () {
     window.scrollTo(0, 1);
     }, 1000);
 };
@@ -91,8 +117,8 @@ MBP.coords = [];
 // https://github.com/shichuan/mobile-html5-boilerplate/issues#issue/2
 
 MBP.splash = function () {
-  var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
-  document.write('<link rel="apple-touch-startup-image" href="/img/' + filename + 'splash.png" />' );
+    var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
+    document.write('<link rel="apple-touch-startup-image" href="/img/' + filename + 'splash.png" />' );
 };
 
 
