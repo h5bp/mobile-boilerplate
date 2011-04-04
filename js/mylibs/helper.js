@@ -11,7 +11,7 @@ window.MBP = window.MBP || {};
 MBP.scaleFix = function () {
   var i;
   var metas = document.getElementsByTagName('meta');
-    if (navigator.userAgent.match(/iPhone/i)) {
+    if (navigator.userAgent.match(/iPhone/i) && !navigator.userAgent.match(/Opera/i)) {
       for (i=0; i<metas.length; i++) {
         if (metas[i].name == "viewport") {
           metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
@@ -47,8 +47,10 @@ MBP.hideUrlBar = function () {
 MBP.fastButton = function (element, handler) {
     this.element = element;
     this.handler = handler;
-    element.addEventListener('touchstart', this, false);
-    element.addEventListener('click', this, false);
+    if (element.addEventListener) {
+      element.addEventListener('touchstart', this, false);
+      element.addEventListener('click', this, false);
+    }
 };
 
 MBP.fastButton.prototype.handleEvent = function(event) {
@@ -109,7 +111,8 @@ MBP.ghostClickHandler = function (event) {
     }
 };
 
-document.addEventListener('click', MBP.ghostClickHandler, true);
+document.addEventListener ? document.addEventListener('click', MBP.ghostClickHandler, true) :
+                            document.attachEvent('click', MBP.ghostClickHandler);
 MBP.coords = [];
 
 
