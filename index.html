@@ -55,7 +55,7 @@
     <div id="main" role="main">
       
     </div>
-  
+    
     <footer>
 
     </footer>
@@ -73,8 +73,10 @@
   <!-- end concatenated and minified scripts-->
   
   <script>
+    // iPhone Scale Bug Fix  http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
     MBP.scaleFix();
     
+    // Media Queries Polyfill  https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill
     yepnope({
       test : Modernizr.mq('(min-width)'),
       nope : ['js/libs/respond.min.js']
