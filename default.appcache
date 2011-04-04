@@ -8,8 +8,8 @@ img/h/apple-touch-icon.png
 img/h/splash.png
 css/style.css
 js/libs/jquery-1.5.1.min.js
-js/libs/modernizr-1.7.min.js
-js/libs/css3-mediaqueries.js
+js/libs/modernizr-custom.js
+js/libs/respond.min.js
 
 NETWORK:
 #http://example.com/api/
