@@ -111,8 +111,10 @@ MBP.ghostClickHandler = function (event) {
     }
 };
 
-document.addEventListener ? document.addEventListener('click', MBP.ghostClickHandler, true) :
-                            document.attachEvent('click', MBP.ghostClickHandler);
+if (document.addEventListener) {
+    document.addEventListener('click', MBP.ghostClickHandler, true);
+}
+                            
 MBP.coords = [];
 
 
