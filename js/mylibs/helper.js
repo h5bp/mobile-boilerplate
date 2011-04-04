@@ -17,7 +17,7 @@ MBP.scaleFix = function () {
           metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
         }
       }
-      document.body.addEventListener("gesturestart", MBP.gestureStart, false);
+      document.addEventListener("gesturestart", MBP.gestureStart, false);
     }
 };
 
