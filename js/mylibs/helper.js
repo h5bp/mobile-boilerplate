@@ -32,8 +32,8 @@ MBP.hideUrlBar = function () {
 };
 
 
-// Fast Buttons
-// http://code.google.com/mobile/articles/fast_buttons.html
+// Fast Buttons - read wiki below before using
+// https://github.com/shichuan/mobile-html5-boilerplate/wiki/JavaScript-Helper
 
 MBP.fastButton = function (element, handler) {
     this.element = element;
