@@ -63,7 +63,8 @@ MBP.fastButton.prototype.onTouchStart = function(event) {
 };
 
 MBP.fastButton.prototype.onTouchMove = function(event) {
-    if(Math.abs(event.touches[0].clientX - this.startX) > 10 || Math.abs(event.touches[0].clientY - this.startY) > 10) {
+    if(Math.abs(event.touches[0].clientX - this.startX) > 10 || 
+       Math.abs(event.touches[0].clientY - this.startY) > 10    ) {
         this.reset();
     }
 };
