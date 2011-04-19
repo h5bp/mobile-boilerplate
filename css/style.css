@@ -65,7 +65,7 @@ input, select { vertical-align: middle; }
  */
 
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+body { max-width:640px; font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 select, input, textarea, button { font:99% sans-serif; }
 
 /* Normalize monospace sizing:
@@ -224,6 +224,9 @@ textarea.contenteditable {-webkit-appearance: none;}
 /*styles for 800px and up!*/
 @media only screen and (min-width: 800px) {
   /* Styles */
+
+body { max-width:auto; }
+  
 }/*/mediaquery*/
 
 
