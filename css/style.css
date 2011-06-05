@@ -1,4 +1,4 @@
-﻿/**
+/**
  * HTML5 ✰ Boilerplate
  *
  * style.css contains a reset, font normalization and some base styles.
@@ -78,7 +78,7 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
  */
 
 /* Prevent mobile zooming while remain desktop zooming: github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14 */
-html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } 
+html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
@@ -164,10 +164,10 @@ a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
 
-/* 
- * Helper classes 
+/*
+ * Helper classes
  */
- 
+
 /* prevent callout */
 .nocallout {-webkit-touch-callout: none;}
 
