@@ -44,6 +44,7 @@
     (function() {
       // prevents links from apps from opening in mobile safari
       // this javascript must be the first script in your head
+      // https://gist.github.com/1042026
       if (('standalone' in window.navigator) && window.navigator.standalone) {
         var curnode, stop=/^(a|html)$/i;
         document.addEventListener('click', function(e) {
