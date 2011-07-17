@@ -464,9 +464,12 @@ AddType application/vnd.symbian.install 	sis
 
 
 # prevent mobile transcoding - 
-#<IfModule mod_headers.c>
-#  Header append Cache-Control "no-transform"
-#</IfModule>
+# <FilesMatch "\.(php|cgi|pl)$">
+#   <IfModule mod_headers.c>
+#     Header append Cache-Control "no-transform"
+#     Header append Vary "User-Agent, Accept"
+#   </IfModule>
+# </FilesMatch>
 
 
 # Mobile Redirection Script is used to detect if user is viewing the site 
