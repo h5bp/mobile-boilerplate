@@ -455,6 +455,7 @@ AddCharset utf-8 .html .css .js .xml .json .rss
 # blackberry types - http://goo.gl/A696I
 AddType application/x-bb-appworld      		bbaw
 AddType text/vnd.rim.location.xloc     		xloc
+AddType text/x-vcard                      vcf
 
 
 # nokia types - http://goo.gl/LU1bM
