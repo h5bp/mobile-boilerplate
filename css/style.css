@@ -115,7 +115,7 @@ input[type="checkbox"] { vertical-align: bottom; }
 .iem7 input[type="checkbox"] { vertical-align: baseline; }
 
 /* Hand cursor on clickable input elements */
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+label, input[type="button"], input[type="submit"], input[type="image"], button, [role="button"] { cursor: pointer; }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea { margin: 0; }
