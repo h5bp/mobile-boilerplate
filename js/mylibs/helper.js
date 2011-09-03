@@ -27,7 +27,7 @@ MBP.gestureStart = function () {
 
 MBP.hideUrlBar = function () {
     /iPhone/.test(MBP.ua) && !location.hash && setTimeout(function () {
-      pageYOffset || window.scrollTo(0, 1);
+      pageYOffset || window.scrollTo(0, 0);  // scroll without cutting off top 1 pixel
     }, 1000);
 };
 
