@@ -12,7 +12,7 @@ MBP.viewportmeta = document.querySelector && document.querySelector('meta[name="
 MBP.ua = navigator.userAgent;
 
 MBP.scaleFix = function () {
-  if (MBP.viewportmeta && /iPhone|iPad/.test(MBP.ua) && !/Opera Mini/.test(MBP.ua)) {
+  if (MBP.viewportmeta && /iPhone|iPad|iPod/.test(MBP.ua) && !/Opera Mini/.test(MBP.ua)) {
     MBP.viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
     document.addEventListener("gesturestart", MBP.gestureStart, false);
   }
