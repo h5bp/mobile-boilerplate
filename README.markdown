@@ -1,9 +1,9 @@
-#Mobile Boilerplate http://html5boilerplate.com
-v1.1
+#Mobile Boilerplate http://html5boilerplate.com/mobile
+v2.0
 
 ##Summary:
 
-A baseline for 'mobile first' web development. Read more at the wiki here: https://github.com/shichuan/mobile-html5-boilerplate/wiki
+A baseline for 'mobile first' web development. Read more at the wiki here: https://github.com/h5bp/mobile-boilerplate/wiki
 
 ##License:
 
