@@ -169,3 +169,11 @@ MBP.autogrow = function (element, lh) {
 
 })(document);
 
+
+// Prevent iOS from zooming onfocus
+// http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
+
+var $viewportMeta = $('meta[name="viewport"]');
+$('input, select, textarea').bind('focus blur', function(event) {
+  $viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
+});
