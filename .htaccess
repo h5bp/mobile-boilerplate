@@ -1,4 +1,3 @@
-
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
@@ -509,7 +508,7 @@ AddCharset utf-8 .html .css .js .xml .json .rss .atom
 
 
 # ----------------------------------------------------------------------
-# Moible specific server config
+# Mobile specific server config
 # ----------------------------------------------------------------------
 
 # blackberry types - http://goo.gl/A696I
