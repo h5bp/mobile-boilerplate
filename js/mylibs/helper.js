@@ -57,17 +57,34 @@ MBP.hideUrlBar = function () {
 
 // Fast Buttons - read wiki below before using
 // https://github.com/shichuan/mobile-html5-boilerplate/wiki/JavaScript-Helper
-
 MBP.fastButton = function (element, handler) {
     this.element = element;
     this.handler = handler;
-    if (element.addEventListener) {
-      element.addEventListener('touchstart', this, false);
-      element.addEventListener('click', this, false);
-    }
+	
+	addEvt(element, "touchstart", this, false);
+	addEvt(element, "click", this, false);
+	
+    /*if (element.addEventListener) {
+		try {
+		  element.addEventListener('touchstart', this, false);
+		  element.addEventListener('click', this, false);
+		} catch (e) {
+			element.addEventListener('click', handler, false);
+		}
+	} else if ("attachEvent" in element) {
+		if(typeof this == "object" && this.handleEvent) {
+			element.attachEvent("onclick", function(){
+                // Bind fn as this
+                this.handleEvent.call(this);
+            });
+		} else {
+			element.attachEvent("onclick", handler);
+		}
+	}*/
 };
 
 MBP.fastButton.prototype.handleEvent = function(event) {
+	event = event || window.event;
     switch (event.type) {
         case 'touchstart': this.onTouchStart(event); break;
         case 'touchmove': this.onTouchMove(event); break;
@@ -93,8 +110,9 @@ MBP.fastButton.prototype.onTouchMove = function(event) {
 };
 
 MBP.fastButton.prototype.onClick = function(event) {
-    event.stopPropagation();
-    event.preventDefault();
+	event = event || window.event;
+    if (event.stopPropagation) { event.stopPropagation(); }
+    if (event.preventDefault) { event.preventDefault(); }
     this.reset();
     this.handler(event);
     if(event.type == 'touchend') {
@@ -104,8 +122,8 @@ MBP.fastButton.prototype.onClick = function(event) {
 };
 
 MBP.fastButton.prototype.reset = function() {
-    this.element.removeEventListener('touchend', this, false);
-    document.body.removeEventListener('touchmove', this, false);
+	rmEvt(this.element, "touchend", this, false);
+	rmEvt(document.body, "touchmove", this, false);
     this.element.style.backgroundColor = "";
 };
 
@@ -132,6 +150,64 @@ if (document.addEventListener) {
 }
                             
 MBP.coords = [];
+
+// fn arg can be an object or a function, thanks to handleEvent
+// read more about the explanation at: http://www.thecssninja.com/javascript/handleevent
+function addEvt(el, evt, fn, bubble) {
+    if("addEventListener" in el) {
+        // BBOS6 doesn't support handleEvent, catch and polyfill
+        try {
+            el.addEventListener(evt, fn, bubble);
+        } catch(e) {
+            if(typeof fn == "object" && fn.handleEvent) {
+                el.addEventListener(evt, function(e){
+                    // Bind fn as this and set first arg as event object
+                    fn.handleEvent.call(fn,e);
+                }, bubble);
+            } else {
+                throw e;
+            }
+        }
+    } else if("attachEvent" in el) {
+        // check if the callback is an object and contains handleEvent
+        if(typeof fn == "object" && fn.handleEvent) {
+            el.attachEvent("on" + evt, function(){
+                // Bind fn as this
+                fn.handleEvent.call(fn);
+            });
+        } else {
+            el.attachEvent("on" + evt, fn);
+        }
+    }
+}
+
+function rmEvt(el, evt, fn, bubble) {
+    if("removeEventListener" in el) {
+        // BBOS6 doesn't support handleEvent, catch and polyfill
+        try {
+            el.removeEventListener(evt, fn, bubble);
+        } catch(e) {
+            if(typeof fn == "object" && fn.handleEvent) {
+                el.removeEventListener(evt, function(e){
+                    // Bind fn as this and set first arg as event object
+                    fn.handleEvent.call(fn,e);
+                }, bubble);
+            } else {
+                throw e;
+            }
+        }
+    } else if("detachEvent" in el) {
+        // check if the callback is an object and contains handleEvent
+        if(typeof fn == "object" && fn.handleEvent) {
+            el.detachEvent("on" + evt, function(){
+                // Bind fn as this
+                fn.handleEvent.call(fn);
+            });
+        } else {
+            el.detachEvent("on" + evt, fn);
+        }
+    }
+}
 
 
 // iOS Startup Image
