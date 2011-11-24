@@ -30,7 +30,7 @@ MBP.hideUrlBar = function () {
 		doc = win.document;
 
 	// If there's a hash, or addEventListener is undefined, stop here
-	if( !location.hash || !win.addEventListener ){
+	if( !location.hash && win.addEventListener ){
 
 		//scroll to 1
 		window.scrollTo( 0, 1 );
