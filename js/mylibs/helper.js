@@ -112,7 +112,6 @@ MBP.fastButton.prototype.onTouchMove = function(event) {
 MBP.fastButton.prototype.onClick = function(event) {
 	event = event || window.event;
     if (event.stopPropagation) { event.stopPropagation(); }
-    if (event.preventDefault) { event.preventDefault(); }
     this.reset();
     this.handler(event);
     if(event.type == 'touchend') {
