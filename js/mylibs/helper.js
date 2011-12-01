@@ -94,6 +94,7 @@ MBP.fastButton.prototype.handleEvent = function(event) {
 };
 
 MBP.fastButton.prototype.onTouchStart = function(event) {
+    MBP.hadTouchEvent = true;
     event.stopPropagation();
     this.element.addEventListener('touchend', this, false);
     document.body.addEventListener('touchmove', this, false);
@@ -134,6 +135,17 @@ MBP.preventGhostClick = function (x, y) {
 };
 
 MBP.ghostClickHandler = function (event) {
+    if (!MBP.hadTouchEvent && 'ontouchstart' in window) {
+        // This is a bit of fun for Android 2.3...
+        // If you change window.location via fastButton, a click event will fire
+        // on the new page, as if the events are continuing from the previous page.
+        // We pick that event up here, but MBP.coords is empty, because it's a new page,
+        // so we don't prevent it. Here's we're assuming that click events on touch devices
+        // that occur without a preceding touchStart are to be ignored. 
+        event.stopPropagation();
+        event.preventDefault();
+        return;
+    }
     for(var i = 0, len = MBP.coords.length; i < len; i += 2) {
         var x = MBP.coords[i];
         var y = MBP.coords[i + 1];
