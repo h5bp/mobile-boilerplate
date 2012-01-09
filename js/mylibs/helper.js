@@ -58,11 +58,21 @@ MBP.hideUrlBar = function () {
 // Fast Buttons - read wiki below before using
 // https://github.com/h5bp/mobile-boilerplate/wiki/JavaScript-Helper
 MBP.fastButton = function (element, handler) {
-    this.element = element;
+    //this.element = element;
     this.handler = handler;
 	
-	addEvt(element, "touchstart", this, false);
-	addEvt(element, "click", this, false);
+	if(element.length && element.length > 1) {
+    	for(var singleElIdx in element) {
+    		if(element[singleElIdx].addEventListener) {
+    			this.addClickEvent(element[singleElIdx]);
+    		}
+    	}
+    } else if (element.addEventListener) {
+      this.addClickEvent(element)
+    }
+    
+	/*addEvt(element, "touchstart", this, false);
+	addEvt(element, "click", this, false);*/
 	
     /*if (element.addEventListener) {
 		try {
@@ -94,37 +104,54 @@ MBP.fastButton.prototype.handleEvent = function(event) {
 };
 
 MBP.fastButton.prototype.onTouchStart = function(event) {
+    var element = event.srcElement;
+    
     MBP.hadTouchEvent = true;
     event.stopPropagation();
-    this.element.addEventListener('touchend', this, false);
+    element.addEventListener('touchend', this, false);
     document.body.addEventListener('touchmove', this, false);
     this.startX = event.touches[0].clientX;
     this.startY = event.touches[0].clientY;
-    this.element.style.backgroundColor = "rgba(0,0,0,.7)";
+    element.style.backgroundColor = "rgba(0,0,0,.7)";
 };
 
 MBP.fastButton.prototype.onTouchMove = function(event) {
+    var element = event.srcElement;
+    
     if(Math.abs(event.touches[0].clientX - this.startX) > 10 || 
        Math.abs(event.touches[0].clientY - this.startY) > 10    ) {
-        this.reset();
+        this.reset(element);
     }
 };
 
 MBP.fastButton.prototype.onClick = function(event) {
 	event = event || window.event;
+	var element = event.srcElement;
+	
     if (event.stopPropagation) { event.stopPropagation(); }
-    this.reset();
-    this.handler(event);
+    this.reset(element);
+    this.handler.apply(event.currentTarget, [event]);
+    
     if(event.type == 'touchend') {
         MBP.preventGhostClick(this.startX, this.startY);
     }
-    this.element.style.backgroundColor = "";
+    element.style.backgroundColor = "";
 };
 
-MBP.fastButton.prototype.reset = function() {
-	rmEvt(this.element, "touchend", this, false);
+MBP.fastButton.prototype.reset = function(element) {
+	
+	rmEvt(element, "touchend", this, false);
 	rmEvt(document.body, "touchmove", this, false);
-    this.element.style.backgroundColor = "";
+    element.style.backgroundColor = "";
+};
+
+/**
+ * Add events to the selected item
+ */
+MBP.fastButton.prototype.addClickEvent = function(element) {
+	
+	addEvt(element, "touchstart", this, false);
+	addEvt(element, "click", this, false);
 };
 
 MBP.preventGhostClick = function (x, y) {
