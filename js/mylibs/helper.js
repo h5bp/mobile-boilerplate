@@ -22,37 +22,44 @@ MBP.gestureStart = function () {
 };
 
 
-// Hide URL Bar for iOS and Android by Scott Jehl
-// https://gist.github.com/1183357
-
-MBP.hideUrlBar = function () {
-	var win = window,
-		doc = win.document;
-
+/*
+  * Normalized hide address bar for iOS & Android
+  * (c) Scott Jehl, scottjehl.com
+  * MIT License
+*/
+(function( win ){
+	var doc = win.document;
+	
 	// If there's a hash, or addEventListener is undefined, stop here
 	if( !location.hash && win.addEventListener ){
-
+		
 		//scroll to 1
 		window.scrollTo( 0, 1 );
 		var scrollTop = 1,
-
-		//reset to 0 on bodyready, if needed
-		bodycheck = setInterval(function(){
-			if( doc.body ){
-				clearInterval( bodycheck );
-				scrollTop = "scrollTop" in doc.body ? doc.body.scrollTop : 1;
-				win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
-			}	
-		}, 15 );
-
+			getScrollTop = function(){
+				return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+			},
+		
+			//reset to 0 on bodyready, if needed
+			bodycheck = setInterval(function(){
+				if( doc.body ){
+					clearInterval( bodycheck );
+					scrollTop = getScrollTop();
+					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+				}	
+			}, 15 );
+		
 		win.addEventListener( "load", function(){
 			setTimeout(function(){
-				//reset to hide addr bar at onload
-				win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+				//at load, if user hasn't scrolled more than 20 or so...
+				if( getScrollTop() < 20 ){
+					//reset to hide addr bar at onload
+					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+				}
 			}, 0);
-		}, false );
+		} );
 	}
-};
+})( this );
 
 
 // Fast Buttons - read wiki below before using
