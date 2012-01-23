@@ -83,7 +83,6 @@ MBP.fastButton.prototype.handleEvent = function(event) {
 };
 
 MBP.fastButton.prototype.onTouchStart = function(event) {
-  MBP.hadTouchEvent = true;
   event.stopPropagation();
   this.element.addEventListener('touchend', this, false);
   document.body.addEventListener('touchmove', this, false);
@@ -148,6 +147,10 @@ MBP.ghostClickHandler = function (event) {
 if (document.addEventListener) {
   document.addEventListener('click', MBP.ghostClickHandler, true);
 }
+
+addEvt( document.documentElement, 'touchstart', function() {
+  MBP.hadTouchEvent = true;
+}, false);
                             
 MBP.coords = [];
 
