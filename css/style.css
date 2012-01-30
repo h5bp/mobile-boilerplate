@@ -177,7 +177,7 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
  * Remove inner padding and border in FF3/4: h5bp.com/l
  */
 
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+button::-moz-focus-inner { border: 0; padding: 0; }
 
 /*
  * 1. Remove default vertical scrollbar in IE6/7/8/9
