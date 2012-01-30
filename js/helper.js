@@ -273,6 +273,14 @@ MBP.autogrow = function (element, lh) {
 })(document);
 
 
+// Enable active
+// Enable CSS active pseudo styles in Mobile Safari
+// http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/
+MBP.enableActive = function () {
+  document.addEventListener("touchstart", function() {}, false);
+}
+
+
 // Prevent iOS from zooming onfocus
 // http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
 
