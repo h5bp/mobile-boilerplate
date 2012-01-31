@@ -24,18 +24,10 @@
   <!-- For nokia devices: -->
   <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
 
-  <!-- iOS web app, delete if not needed -->
+  <!-- iOS web app, delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
   <!-- <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
-
-  <!-- 320x460 for iPhone 3GS -->
-  <!-- <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="img/startup.png"> -->
-  <!-- 640x920 for retina display -->
-  <!-- <link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="img/startup-retina.png"> -->
-  <!-- iPad Portrait 768x1004 -->
-  <!-- <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="img/startup-tablet-portrait.png"> -->
-  <!-- iPad Landscape 1024x748 -->
-  <!-- <link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="img/startup-tablet-landscape.png"> -->
+  <!-- <script>(function(){var a;if(navigator.platform==="iPad"){a=window.orientation!==90||window.orientation===-90?"img/startup-tablet-landscape.png":"img/startup-tablet-portrait.png"}else{a=window.devicePixelRatio===2?"img/startup-retina.png":"img/startup.png"}document.write('<link rel="apple-touch-startup-image" href="'+a+'"/>')})()</script>
   
   <!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
   <!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
