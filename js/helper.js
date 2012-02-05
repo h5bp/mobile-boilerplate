@@ -270,21 +270,29 @@ MBP.autogrow = function (element, lh) {
                              element.attachEvent('onkeyup', handler);
 };
 
-})(document);
-
 
 // Enable active
 // Enable CSS active pseudo styles in Mobile Safari
 // http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/
 MBP.enableActive = function () {
   document.addEventListener("touchstart", function() {}, false);
-}
+};
 
 
 // Prevent iOS from zooming onfocus
 // http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
 
-var $viewportMeta = $('meta[name="viewport"]');
-$('input, select, textarea').bind('focus blur', function(event) {
-  $viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
-});
+MBP.viewportMeta = $('meta[name="viewport"]');
+MBP.preventZoom = function () {
+  $('input, select, textarea').bind('focus blur', function(event) {
+    MBP.viewportMeta.attr('content', 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1));
+  });
+};
+
+})(document);
+
+
+
+
+
+
