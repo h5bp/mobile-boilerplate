@@ -290,9 +290,3 @@ MBP.preventZoom = function () {
 };
 
 })(document);
-
-
-
-
-
-
