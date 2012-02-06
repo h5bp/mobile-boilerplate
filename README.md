@@ -20,6 +20,8 @@ Clone the git repo - `git clone git://github.com/h5bp/mobile-boilerplate.git` - 
 * iPhone web app meta
 * INSTANT button click event
 * Textarea autogrow
+* Hide URL bar method
+* Prevent form zoom onfocus method
 * Mobile site redirection
 * Mobile sitemap
 * Mobile bookmark bubble
@@ -48,7 +50,6 @@ Anyone and everyone is welcome to contribute. There are several ways you can hel
 * Source: http://github.com/h5bp/mobile-boilerplate
 * Web: http://html5boilerplate.com/mobile
 * Docs: https://github.com/h5bp/mobile-boilerplate/wiki
-* Mailing list: http://h5bp.com/group
 * Twitter: http://twitter.com/h5bp
 
 
@@ -58,10 +59,8 @@ Anyone and everyone is welcome to contribute. There are several ways you can hel
 
 * jQuery: MIT/GPL license
 * Modernizr: MIT/BSD license
-* Respond.js: MIT/GPL license
 * Normalize.css: Public Domain
 * Bookmark Bubble Library: Apache License, Version 2.0
-* Web Storage Portability Layer: Apache License, Version 2.0
 
 
 ### Everything else:
