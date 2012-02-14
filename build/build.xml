@@ -588,7 +588,7 @@
             <exclude name="otherscripts-concat.js"/>
             <exclude name="plugins.js"/>
             <exclude name="${file.root.script}"/>
-            <include name="${slug.lib}/*"/>
+            <include name="${slug.libs}/*"/>
         </fileset>
       </copy>
   </target>
