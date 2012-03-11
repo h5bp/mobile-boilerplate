@@ -711,13 +711,48 @@
                 <echo message="Updating the site.manifest with the images"/>
                 <for param="file">
                     <path>
-                        <fileset dir="./${dir.source}/${dir.images}/" includes="**/*"/>
+                        <fileset dir="./${dir.source}/${dir.images}/">
+                          <exclude name="h/**" />
+                          <exclude name="m/**" />
+                          <exclude name="l/**" />
+                        </fileset>
                     </path>
                     <sequential>
                         <basename property="filename.@{file}" file="@{file}" />
                         <replaceregexp match="# image files" replace="# image files${line.separator}${dir.images}/${filename.@{file}}" file="${dir.intermediate}/${file.manifest}" />
                     </sequential>
                 </for>
+
+                <for param="file">
+                    <path> 
+                        <fileset dir="./${dir.source}/${dir.images}/h/" />
+                    </path>
+                    <sequential>
+                        <basename property="filename.@{file}" file="@{file}" />
+                        <replaceregexp match="# image files" replace="# image files${line.separator}${dir.images}/h/${filename.@{file}}" file="${dir.intermediate}/${file.manifest}" />
+                    </sequential>
+                </for>
+
+                <for param="file">
+                    <path> 
+                        <fileset dir="./${dir.source}/${dir.images}/m/" />
+                    </path>
+                    <sequential>
+                        <basename property="filename.@{file}" file="@{file}" />
+                        <replaceregexp match="# image files" replace="# image files${line.separator}${dir.images}/m/${filename.@{file}}" file="${dir.intermediate}/${file.manifest}" />
+                    </sequential>
+                </for>
+
+                <for param="file">
+                    <path> 
+                        <fileset dir="./${dir.source}/${dir.images}/l/" />
+                    </path>
+                    <sequential>
+                        <basename property="filename.@{file}" file="@{file}" />
+                        <replaceregexp match="# image files" replace="# image files${line.separator}${dir.images}/l/${filename.@{file}}" file="${dir.intermediate}/${file.manifest}" />
+                    </sequential>
+                </for>
+                
 
                 <echo message="copying ${file.manifest} to /${dir.publish}"/>
                 <copy file="${dir.intermediate}/${file.manifest}" tofile="${dir.publish}/${file.manifest}" />
