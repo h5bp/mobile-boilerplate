@@ -282,9 +282,17 @@ MBP.enableActive = function () {
 // Prevent iOS from zooming onfocus
 // http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
 MBP.preventZoom = function () {
-  $('input, select, textarea').bind('focus blur', function(event) {
-    MBP.viewportmeta.content = 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1);
-  });
+  var formFields = document.querySelectorAll('input, select, textarea');
+  var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
+  var i = 0;
+  for(i = 0; i < formFields.length; i++) {
+    formFields[i].onfocus = function() {
+      MBP.viewportmeta.content = contentString + '1';
+    };
+    formFields[i].onblur = function() {
+      MBP.viewportmeta.content = contentString + '10';
+    };
+  }
 };
 
 })(document);
