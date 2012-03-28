@@ -280,11 +280,11 @@ MBP.enableActive = function () {
 
 
 // Prevent iOS from zooming onfocus
-// http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
+// https://github.com/h5bp/mobile-boilerplate/pull/108
 MBP.preventZoom = function () {
-  var formFields = document.querySelectorAll('input, select, textarea');
-  var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
-  var i = 0;
+  var formFields = document.querySelectorAll('input, select, textarea'),
+  	  contentString = 'width=device-width,initial-scale=1,maximum-scale=',
+  	  i = 0;
   for(i = 0; i < formFields.length; i++) {
     formFields[i].onfocus = function() {
       MBP.viewportmeta.content = contentString + '1';
@@ -294,5 +294,11 @@ MBP.preventZoom = function () {
     };
   }
 };
+
+// Original jQuery snippet for Prevent iOS from zooming onfocus
+// http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
+// $('input, select, textarea').bind('focus blur', function(event) {	  	
+//	MBP.viewportmeta.content = 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1);  	
+// });
 
 })(document);
