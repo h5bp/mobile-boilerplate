@@ -1,12 +1,16 @@
 ﻿/*
  * MBP - Mobile boilerplate helper functions
  */
+
 (function(document){
 
 window.MBP = window.MBP || {}; 
 
-// Fix for iPhone viewport scale bug 
-// http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+
+/* 
+  * Fix for iPhone viewport scale bug 
+  * http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+*/
 
 MBP.viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]');
 MBP.ua = navigator.userAgent;
@@ -87,8 +91,11 @@ MBP.hideUrlBarOnLoad = function () {
 };
 
 
-// Fast Buttons - read wiki below before using
-// https://github.com/h5bp/mobile-boilerplate/wiki/JavaScript-Helper
+/* 
+   * Fast Buttons - read wiki below before using
+   * https://github.com/h5bp/mobile-boilerplate/wiki/JavaScript-Helper
+*/
+
 MBP.fastButton = function (element, handler) {
   this.handler = handler;
 	
@@ -251,8 +258,10 @@ function rmEvt(el, evt, fn, bubble) {
 }
 
 
-// iOS Startup Image
-// https://github.com/h5bp/mobile-boilerplate/issues#issue/2
+/* 
+  * iOS Startup Image
+  * https://github.com/h5bp/mobile-boilerplate/issues#issue/2
+*/
 
 MBP.splash = function () {
   var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
@@ -260,8 +269,10 @@ MBP.splash = function () {
 };
 
 
-// Autogrow
-// http://googlecode.blogspot.com/2009/07/gmail-for-mobile-html5-series.html
+/* 
+  * Autogrow
+  * http://googlecode.blogspot.com/2009/07/gmail-for-mobile-html5-series.html
+*/
 
 MBP.autogrow = function (element, lh) {
   function handler(e){
@@ -285,16 +296,22 @@ MBP.autogrow = function (element, lh) {
 };
 
 
-// Enable active
-// Enable CSS active pseudo styles in Mobile Safari
-// http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/
+/* 
+  * Enable active
+  * Enable CSS active pseudo styles in Mobile Safari
+  * http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/
+*/
+
 MBP.enableActive = function () {
   document.addEventListener("touchstart", function() {}, false);
 };
 
 
-// Prevent iOS from zooming onfocus
-// https://github.com/h5bp/mobile-boilerplate/pull/108
+/* 
+  * Prevent iOS from zooming onfocus
+  * https://github.com/h5bp/mobile-boilerplate/pull/108
+*/
+
 MBP.preventZoom = function () {
   var formFields = document.querySelectorAll('input, select, textarea'),
   	  contentString = 'width=device-width,initial-scale=1,maximum-scale=',
@@ -309,8 +326,11 @@ MBP.preventZoom = function () {
   }
 };
 
-// Original jQuery snippet for Prevent iOS from zooming onfocus
-// http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
+
+/* 
+  * Original jQuery snippet for Prevent iOS from zooming onfocus
+  *  http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
+*/
 // $('input, select, textarea').bind('focus blur', function(event) {	  	
 //	MBP.viewportmeta.content = 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1);  	
 // });
