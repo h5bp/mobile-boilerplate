@@ -101,11 +101,9 @@ MBP.fastButton = function (element, handler) {
 	
 	if (element.length && element.length > 1) {
     for (var singleElIdx in element) {
-      if (element[singleElIdx].addEventListener) {
-        this.addClickEvent(element[singleElIdx]);
-      }
+      this.addClickEvent(element[singleElIdx]);
     }
-  } else if (element.addEventListener) {
+  } else {
     this.addClickEvent(element);
   }
 };
@@ -149,7 +147,8 @@ MBP.fastButton.prototype.onClick = function(event) {
   element.style.backgroundColor = "";
 };
 
-MBP.fastButton.prototype.reset = function() {
+MBP.fastButton.prototype.reset = function(event) {
+  var element = event.srcElement;
 	rmEvt(element, "touchend", this, false);
 	rmEvt(document.body, "touchmove", this, false);
   element.style.backgroundColor = "";
