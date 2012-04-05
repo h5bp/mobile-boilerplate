@@ -60,7 +60,8 @@ MBP.hideUrlBar = function(){
 
 MBP.hideUrlBarOnLoad = function () {
   var win = window,
-      doc = win.document;
+      doc = win.document,
+      bodycheck;
 
   // If there's a hash, or addEventListener is undefined, stop here
   if( !location.hash && win.addEventListener ) {
