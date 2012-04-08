@@ -2,11 +2,9 @@
 
 Mobile Boilerplate is a professional front-end template that helps you build fast and robust mobile web applications. Spend more time developing and less time reinventing the wheel.
 
-
 ## Quick start
 
 Clone the git repo - `git clone git://github.com/h5bp/mobile-boilerplate.git` - or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
-
 
 ## Features
 
@@ -35,7 +33,6 @@ Clone the git repo - `git clone git://github.com/h5bp/mobile-boilerplate.git` - 
 * "Delete-key friendly." Easy to strip out parts you don't need.
 * Extensive inline and accompanying documentation.
 
-
 ## Contributing
 
 Anyone and everyone is welcome to contribute. There are several ways you can help out:
@@ -44,14 +41,12 @@ Anyone and everyone is welcome to contribute. There are several ways you can hel
 2. Sending pull requests for bug fixes or new features and improvements.
 3. Making the [docs](https://github.com/h5bp/mobile-boilerplate/wiki) better.
 
-
 ## Project information
 
 * Source: http://github.com/h5bp/mobile-boilerplate
 * Web: http://html5boilerplate.com/mobile
 * Docs: https://github.com/h5bp/mobile-boilerplate/wiki
 * Twitter: http://twitter.com/h5bp
-
 
 ## License
 
@@ -61,7 +56,6 @@ Anyone and everyone is welcome to contribute. There are several ways you can hel
 * Modernizr: MIT/BSD license
 * Normalize.css: Public Domain
 * Bookmark Bubble Library: Apache License, Version 2.0
-
 
 ### Everything else:
 
