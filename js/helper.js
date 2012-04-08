@@ -63,11 +63,11 @@
     // If there's a hash, or addEventListener is undefined, stop here
     if( !location.hash && win.addEventListener ) {
 
-      //scroll to 1
+      // Scroll to 1
       window.scrollTo( 0, 1 );
       MBP.BODY_SCROLL_TOP = 1;
 
-      //reset to 0 on bodyready, if needed
+      // Reset to 0 on bodyready, if needed
       bodycheck = setInterval(function() {
         if( doc.body ) {
           clearInterval( bodycheck );
@@ -78,9 +78,9 @@
 
       win.addEventListener( "load", function() {
         setTimeout(function() {
-          //at load, if user hasn't scrolled more than 20 or so...
+          // At load, if user hasn't scrolled more than 20 or so...
           if( MBP.getScrollTop() < 20 ) {
-            //reset to hide addr bar at onload
+            // Reset to hide addr bar at onload
             MBP.hideUrlBar();
           }
         }, 0);
@@ -195,7 +195,7 @@
   MBP.coords = [];
 
   // fn arg can be an object or a function, thanks to handleEvent
-  // read more about the explanation at: http://www.thecssninja.com/javascript/handleevent
+  // Read more about the explanation at: http://www.thecssninja.com/javascript/handleevent
   function addEvt(el, evt, fn, bubble) {
     if("addEventListener" in el) {
       // BBOS6 doesn't support handleEvent, catch and polyfill
@@ -212,7 +212,7 @@
         }
       }
     } else if("attachEvent" in el) {
-      // check if the callback is an object and contains handleEvent
+      // Check if the callback is an object and contains handleEvent
       if(typeof fn == "object" && fn.handleEvent) {
         el.attachEvent("on" + evt, function(){
           // Bind fn as this
@@ -240,7 +240,7 @@
         }
       }
     } else if("detachEvent" in el) {
-      // check if the callback is an object and contains handleEvent
+      // Check if the callback is an object and contains handleEvent
       if(typeof fn == "object" && fn.handleEvent) {
         el.detachEvent("on" + evt, function(){
           // Bind fn as this
