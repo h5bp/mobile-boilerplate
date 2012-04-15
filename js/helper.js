@@ -259,17 +259,6 @@ function rmEvt(el, evt, fn, bubble) {
 
 
 /* 
-  * iOS Startup Image
-  * https://github.com/h5bp/mobile-boilerplate/issues#issue/2
-*/
-
-MBP.splash = function () {
-  var filename = navigator.platform === 'iPad' ? 'h/' : 'l/';
-  document.write('<link rel="apple-touch-startup-image" href="/img/' + filename + 'splash.png" />' );
-};
-
-
-/* 
   * Autogrow
   * http://googlecode.blogspot.com/2009/07/gmail-for-mobile-html5-series.html
 */
