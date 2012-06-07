@@ -249,6 +249,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /* prevent callout */
 .nocallout {-webkit-touch-callout: none;}
 
+.pressed { background-color: rgba(0,0,0,.7); }
+
 /* A hack for HTML5 contenteditable attribute on mobile */
 textarea[contenteditable] {-webkit-appearance: none;}
 
