@@ -17,12 +17,17 @@ MBP.ua = navigator.userAgent;
 
 MBP.scaleFix = function () {
   if (MBP.viewportmeta && /iPhone|iPad|iPod/.test(MBP.ua) && !/Opera Mini/.test(MBP.ua)) {
-    MBP.viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+    MBP.disableZoom();
     document.addEventListener("gesturestart", MBP.gestureStart, false);
+    document.addEventListener("orientationchange", MBP.disableZoom, false);
   }
 };
 MBP.gestureStart = function () {
   MBP.viewportmeta.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+};
+
+MBP.disableZoom = function (){
+  MBP.viewportmeta.content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
 };
 
 
