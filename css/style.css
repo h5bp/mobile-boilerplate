@@ -16,7 +16,7 @@
    ========================================================================== */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; margin: 0; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
@@ -143,20 +143,20 @@ legend { border: 0; *margin-left: -7px; padding: 0; }
  * 3. Define consistent vertical alignment display in all browsers
  */
 
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input, select, textarea { font-size: 100%; vertical-align: baseline; *vertical-align: middle; margin: 0; }
 
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7
  */
 
-button, input { line-height: normal; *overflow: visible; }
+button, input { *overflow: visible; line-height: normal; }
 
 /*
  * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
  */
 
-table button, table input { *overflow: auto; }
+table button, table input { *overflow: auto; line-height: normal; }
 
 /*
  * 1. Display hand cursor for clickable form elements
@@ -274,7 +274,7 @@ textarea[contenteditable] {-webkit-appearance: none;}
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+.clearfix { *zoom: 1; color: inherit;}
 
 
 
