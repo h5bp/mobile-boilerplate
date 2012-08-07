@@ -99,6 +99,7 @@ MBP.hideUrlBarOnLoad = function () {
 
 MBP.fastButton = function (element, handler, pressedClass) {
   this.handler = handler;
+  // styling of .pressed is defined in css/style.css
   this.pressedClass = typeof pressedClass === "undefined" ? "pressed" : pressedClass;
 
   if (element.length && element.length > 1) {
