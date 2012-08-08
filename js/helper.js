@@ -159,7 +159,7 @@ MBP.fastButton.prototype.reset = function(event) {
 	rmEvt(document.body, "touchmove", this, false);
 
   var pattern = new RegExp(" ?" + this.pressedClass, "gi");
-  this.element.className = this.element.className.replace(pattern, ''); };
+  this.element.className = this.element.className.replace(pattern, '');
 };
 
 MBP.fastButton.prototype.addClickEvent = function(element) {
