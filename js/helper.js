@@ -130,7 +130,7 @@ MBP.fastButton.prototype.onTouchStart = function(event) {
   this.startX = event.touches[0].clientX;
   this.startY = event.touches[0].clientY;
 
-  this.element.className+= ' ' + this.pressedClass;
+  element.className+= ' ' + this.pressedClass;
 };
 
 MBP.fastButton.prototype.onTouchMove = function(event) {
@@ -150,7 +150,7 @@ MBP.fastButton.prototype.onClick = function(event) {
     MBP.preventGhostClick(this.startX, this.startY);
   }
   var pattern = new RegExp(" ?" + this.pressedClass, "gi");
-  this.element.className = this.element.className.replace(pattern, '');
+  element.className = element.className.replace(pattern, '');
 };
 
 MBP.fastButton.prototype.reset = function(event) {
@@ -159,7 +159,7 @@ MBP.fastButton.prototype.reset = function(event) {
 	rmEvt(document.body, "touchmove", this, false);
 
   var pattern = new RegExp(" ?" + this.pressedClass, "gi");
-  this.element.className = this.element.className.replace(pattern, '');
+  element.className = element.className.replace(pattern, '');
 };
 
 MBP.fastButton.prototype.addClickEvent = function(element) {
