@@ -1,4 +1,5 @@
-﻿/**
+
+/**
  * MBP - Mobile boilerplate helper functions
  */
 
@@ -90,7 +91,6 @@
         }
     };
 
-
     /**
      * Fast Buttons - read wiki below before using
      * https://github.com/h5bp/mobile-boilerplate/wiki/JavaScript-Helper
@@ -176,7 +176,7 @@
     };
 
     MBP.ghostClickHandler = function(event) {
-        if (!MBP.hadTouchEvent && 'ontouchstart' in window) {
+        if (!MBP.hadTouchEvent && MBP.dodgyAndroid) {
             // This is a bit of fun for Android 2.3...
             // If you change window.location via fastButton, a click event will fire
             // on the new page, as if the events are continuing from the previous page.
@@ -196,6 +196,11 @@
             }
         }
     };
+
+    // This bug only affects touch Android 2.3 devices, but a simple ontouchstart test creates a false positive on
+    // some Blackberry devices. https://github.com/Modernizr/Modernizr/issues/372
+    // The browser sniffing is to avoid the Blackberry case. Bah
+    MBP.dodgyAndroid = ('ontouchstart' in window) && (navigator.userAgent.indexOf('Android 2.3') != -1);
 
     if (document.addEventListener) {
         document.addEventListener('click', MBP.ghostClickHandler, true);
