@@ -294,21 +294,31 @@
     };
 
     /**
-     * Enable active
      * Enable CSS active pseudo styles in Mobile Safari
-     * http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/
+     * http://alxgbsn.co.uk/2011/10/17/enable-css-active-pseudo-styles-in-mobile-safari/
      */
 
-    MBP.enableActive = function() {
+    MBP.enableActive = function () {
         document.addEventListener('touchstart', function() {}, false);
+    };
+
+    /**
+     * Prevent default scrolling on document window
+     */
+
+    MBP.preventScrolling = function () {
+        document.addEventListener('touchmove', function(e) {
+            e.preventDefault()
+        }, false);
     };
 
     /**
      * Prevent iOS from zooming onfocus
      * https://github.com/h5bp/mobile-boilerplate/pull/108
+     * Adapted from original jQuery code here: http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
      */
 
-    MBP.preventZoom = function() {
+    MBP.preventZoom = function () {
         var formFields = document.querySelectorAll('input, select, textarea');
         var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
         var i = 0;
@@ -362,14 +372,5 @@
             head.appendChild(link1);
         }
     };
-
-    /**
-     * Original jQuery snippet for Prevent iOS from zooming onfocus
-     * http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
-     */
-
-    // $('input, select, textarea').bind('focus blur', function(event) {
-        //  MBP.viewportmeta.content = 'width=device-width,initial-scale=1,maximum-scale=' + (event.type == 'blur' ? 10 : 1);
-    // });
 
 })(document);
