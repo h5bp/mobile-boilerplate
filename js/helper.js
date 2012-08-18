@@ -58,7 +58,7 @@
         }
     };
 
-    MBP.hideUrlBarOnLoad = function () {
+    MBP.hideUrlBarOnLoad = function() {
         var win = window;
         var doc = win.document;
         var bodycheck;
@@ -170,7 +170,7 @@
 
     MBP.preventGhostClick = function(x, y) {
         MBP.coords.push(x, y);
-        window.setTimeout(function () {
+        window.setTimeout(function() {
             MBP.coords.splice(0, 2);
         }, 2500);
     };
@@ -298,7 +298,7 @@
      * http://alxgbsn.co.uk/2011/10/17/enable-css-active-pseudo-styles-in-mobile-safari/
      */
 
-    MBP.enableActive = function () {
+    MBP.enableActive = function() {
         document.addEventListener('touchstart', function() {}, false);
     };
 
@@ -306,9 +306,9 @@
      * Prevent default scrolling on document window
      */
 
-    MBP.preventScrolling = function () {
+    MBP.preventScrolling = function() {
         document.addEventListener('touchmove', function(e) {
-            e.preventDefault()
+            e.preventDefault();
         }, false);
     };
 
@@ -318,7 +318,7 @@
      * Adapted from original jQuery code here: http://nerd.vasilis.nl/prevent-ios-from-zooming-onfocus/
      */
 
-    MBP.preventZoom = function () {
+    MBP.preventZoom = function() {
         var formFields = document.querySelectorAll('input, select, textarea');
         var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
         var i = 0;
@@ -337,7 +337,7 @@
      * iOS Startup Image helper
      */
 
-    MBP.startupImage = function () {
+    MBP.startupImage = function() {
         var portrait;
         var landscape;
         var pixelRatio;
