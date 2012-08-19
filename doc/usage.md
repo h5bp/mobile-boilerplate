@@ -23,13 +23,13 @@ A basic Mobile Boilerplate site initially looks something like this:
 .
 ├── css
 │   ├── main.css
-		└── normalize.css
+│   └── normalize.css
 ├── doc
 ├── img
-		├── startup
-		│		└── [apple-startup-images]
-		└── touch
-				└── [apple-touch-icons]
+│		├── startup
+│		│   └── [apple-startup-images]
+│		└── touch
+│		    └── [apple-touch-icons]
 ├── js
 │   ├── helper.js
 │   ├── main.js
