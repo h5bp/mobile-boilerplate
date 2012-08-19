@@ -114,145 +114,6 @@ value your sanity. This is an HTML-centric way of achieving that.
 
 **_WARNING:_** DO NOT INCLUDE ON PAGES THAT SHOULD APPEAR IN SEARCH ENGINES.
 
-### Firefox and IE Search Plugins
-
-Sites with in-site search functionality should be strongly considered for a
-browser search plugin. A "search plugin" is an XML file which defines how your
-plugin behaves in the browser. [How to make a browser search
-plugin](http://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plugin).
-
-```html
-<link rel="search" title="" type="application/opensearchdescription+xml" href="">
-```
-
-
-## Internet Explorer
-
-### Prompt users to switch to "Desktop Mode" in IE10 Metro
-
-IE10 does not support plugins, such as Flash, in Metro mode. If your site
-requires plugins, you can let users know that via the X-UA-Compatible meta
-element, which will prompt them to switch to Desktop Mode.
-
-```html
-<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">
-```
-
-Here's what it looks like alongside H5BP's default X-UA-Compatible values:
-
-```html
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
-```
-
-You can find more information in [Microsoft's IEBlog post about prompting for
-plugin use in IE10 Metro
-Mode](http://blogs.msdn.com/b/ie/archive/2012/01/31/web-sites-and-a-plug-in-free-web.aspx).
-
-### IE Pinned Sites (IE9+)
-
-Enabling your application for pinning will allow IE9 users to add it to their
-Windows Taskbar and Start Menu. This comes with a range of new tools that you
-can easily configure with the elements below. See more [documentation on IE9
-Pinned Sites](http://msdn.microsoft.com/en-us/library/gg131029.aspx).
-
-### Name the Pinned Site for Windows
-
-Without this rule, Windows will use the page title as the name for your
-application.
-
-```html
-<meta name="application-name" content="Sample Title">
-```
-
-### Give your Pinned Site a tooltip
-
-You know — a tooltip. A little textbox that appears when the user holds their
-mouse over your Pinned Site's icon.
-
-```html
-<meta name="msapplication-tooltip" content="A description of what this site does.">
-```
-
-### Set a default page for your Pinned Site
-
-If the site should go to a specific URL when it is pinned (such as the
-homepage), enter it here. One idea is to send it to a special URL so you can
-track the number of pinned users, like so:
-`http://www.example.com/index.html?pinned=true`
-
-```html
-<meta name="msapplication-starturl" content="http://www.example.com/index.html?pinned=true">
-```
-
-### Recolor IE's controls manually for a Pinned Site
-
-IE9+ will automatically use the overall color of your Pinned Site's favicon to
-shade its browser buttons. UNLESS you give it another color here. Only use
-named colors (`red`) or hex colors (`#ff0000`).
-
-```html
-<meta name="msapplication-navbutton-color" content="#ff0000">
-```
-
-### Manually set the window size of a Pinned Site
-
-If the site should open at a certain window size once pinned, you can specify
-the dimensions here. It only supports static pixel dimensions. 800x600
-minimum.
-
-```html
-<meta name="msapplication-window" content="width=800;height=600">
-```
-
-### Jump List "Tasks" for Pinned Sites
-
-Add Jump List Tasks that will appear when the Pinned Site's icon gets a
-right-click. Each Task goes to the specified URL, and gets its own mini icon
-(essentially a favicon, a 16x16 .ICO). You can add as many of these as you
-need.
-
-```html
-<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
-<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
-```
-
-### (Windows 8) High quality visuals for Pinned Sites
-
-Windows 8 adds the ability for you to provide a PNG tile image and specify the
-tile's background color. [Full details on the IE
-blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pinned-sites-in-windows-8.aspx).
-
-* Create a 144x144 image of your site icon, filling all of the canvas, and
-  using a transparent background.
-* Save this image as a 32-bit PNG and optimize it without reducing
-  colour-depth. It can be named whatever you want (e.g. `metro-tile.png`).
-* To reference the tile and its color, add the HTML `meta` elements described
-  in the IE Blog post.
-
-### (Windows 8) Badges for Pinned Sites
-
-IE10 will poll an XML document for badge information to display on your app's
-tile in the Start screen. The user will be able to receive these badge updates
-even when your app isn't actively running. The badge's value can be a number,
-or one of a predefined list of glyphs.
-
-* [Tutorial on IEBlog with link to badge XML schema](http://blogs.msdn.com/b/ie/archive/2012/04/03/pinned-sites-in-windows-8.aspx)
-* [Available badge values](http://msdn.microsoft.com/en-us/library/ie/br212849.aspx)
-
-```html
-<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://www.example.com/path/to/file.xml" />
-```
-
-### Suppress IE6 image toolbar
-
-Kill IE6's pop-up-on-mouseover toolbar for images that can interfere with
-certain designs and be pretty distracting in general.
-
-```html
-<meta http-equiv="imagetoolbar" content="false">
-```
-
-
 ## Social Networks
 
 ### Facebook Open Graph data
@@ -292,7 +153,6 @@ documentation](https://dev.twitter.com/docs/cards).
 
 ```
 
-
 ## URLs
 
 ### Canonical URL
@@ -315,42 +175,6 @@ the Microformats wiki](http://microformats.org/wiki/rel-shortlink).
 ```html
 <link rel="shortlink" href="h5bp.com">
 ```
-
-
-## News Feeds
-
-### RSS
-
-Have an RSS feed? Link to it here. Want to [learn how to write an RSS feed from
-scratch](http://www.rssboard.org/rss-specification)?
-
-```html
-<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
-```
-
-### Atom
-
-Atom is similar to RSS, and you might prefer to use it instead of or in
-addition to it. [See what Atom's all
-about](http://www.atomenabled.org/developers/syndication/).
-
-```html
-<link rel="alternate" type="application/atom+xml" title="Atom" href="/atom.xml">
-```
-
-### Pingbacks
-
-Your server may be notified when another site links to yours. The href
-attribute should contain the location of your pingback service.
-
-```html
-<link rel="pingback" href="">
-```
-
-* High-level explanation: http://codex.wordpress.org/Introduction_to_Blogging#Pingbacks
-* Step-by-step example case: http://www.hixie.ch/specs/pingback/pingback-1.0#TOC5
-* PHP pingback service: http://blog.perplexedlabs.com/2009/07/15/xmlrpc-pingbacks-using-php/
-
 
 ## App Stores
 
@@ -482,11 +306,6 @@ $(function(){
 
 * Use [HTML5
   polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills).
-
-* Use [Microformats](http://microformats.org/wiki/Main_Page) (via
-  [microdata](http://microformats.org/wiki/microdata)) for optimum search
-  results
-  [visibility](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html).
 
 * If you're building a web app you may want [native style momentum scrolling in
   iOS5](http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/) using
