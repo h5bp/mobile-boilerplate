@@ -26,17 +26,17 @@ A basic Mobile Boilerplate site initially looks something like this:
 │   └── normalize.css
 ├── doc
 ├── img
-│		├── startup
-│		│   └── [apple-startup-images]
-│		└── touch
-│		    └── [apple-touch-icons]
+│   ├── startup
+│   │   └── [apple-startup-images]
+│   └── touch
+│       └── [apple-touch-icons]
 ├── js
 │   ├── helper.js
 │   ├── main.js
 │   ├── plugins.js
 │   └── vendor
-│       ├── zepto.min.js
-│       └── modernizr-2.6.1.min.js
+│       ├── modernizr-2.6.1.min.js
+│       └── zepto.min.js
 ├── tools
 │   └── [mobile-bookmark-bubble]
 ├── .htaccess
@@ -45,8 +45,7 @@ A basic Mobile Boilerplate site initially looks something like this:
 ├── humans.txt
 ├── robots.txt
 ├── crossdomain.xml
-├── sitemap.xml
-├── favicon.ico
+└── favicon.ico
 ```
 
 What follows is a general overview of each major part and how to use them.

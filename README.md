@@ -27,7 +27,6 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * Hide URL bar method
 * Prevent form zoom onfocus method
 * Mobile site redirection
-* Mobile sitemap
 * Mobile bookmark bubble
 * User Agent Detection
 * The latest Zepto.js
