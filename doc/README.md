@@ -22,14 +22,14 @@ MBP (Mobile Boilerplate) is based on H5BP (HTML5 Boilerplate), a rock-solid HTML
 
 ## Development
 
-* [Contributing to HTML5 Mobile Boilerplate](contribute.md) — Guidelines on how to
+* [Contributing to Mobile Boilerplate](contribute.md) — Guidelines on how to
   contribute effectively.
-* [Extending and customizing HTML5 Mobile Boilerplate](extend.md) — Going further with
+* [Extending and customizing Mobile Boilerplate](extend.md) — Going further with
   the boilerplate.
 
 ## Related projects
 
-HTML5 Mobile Boilerplate has several related projects to help improve the performance
+Mobile Boilerplate has several related projects to help improve the performance
 of your site/app in various production environments.
 
 * [Server configs](https://github.com/h5bp/server-configs) — Configs for
