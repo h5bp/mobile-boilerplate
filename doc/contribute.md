@@ -1,9 +1,9 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile) | [Documentation
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/) | [Documentation
 table of contents](README.md)
 
-# Contributing to HTML5 Mobile Boilerplate
+# Contributing to Mobile Boilerplate
 
-♥ HTML5 Mobile Boilerplate and want to get involved? Thanks! There are plenty of ways
+♥ Mobile Boilerplate and want to get involved? Thanks! There are plenty of ways
 you can help!
 
 

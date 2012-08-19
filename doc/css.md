@@ -1,12 +1,12 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile) | [Documentation
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/) | [Documentation
 table of contents](README.md)
 
 # The CSS
 
-The HTML5 Mobile Boilerplate starting CSS includes:
+The Mobile Boilerplate starting CSS includes:
 
 * [Normalize.css](https://github.com/necolas/normalize.css).
-* Useful HTML5 Mobile Boilerplate defaults.
+* Useful Mobile Boilerplate defaults.
 * Common helpers.
 * Placeholder media queries.
 
@@ -22,7 +22,7 @@ extensive inline documentation. Please refer to the [Normalize.css
 project](http://necolas.github.com/normalize.css/) for more information.
 
 
-## HTML5 Mobile Boilerplate defaults
+## Mobile Boilerplate defaults
 
 This project includes a handful of base styles that build upon Normalize.css.
 These include:
@@ -94,6 +94,6 @@ clearfix](http://nicolasgallagher.com/micro-clearfix-hack/).
 
 ## Media Queries
 
-The HTML5 Mobile Boilerplate provides a default placeholder Media Query that can be used to override the primary 'mobile first' styles, providing adjustments for wider viewports (such as tablet devices). It is recommended that you adapt these Media Queries based on the content of your mobile web app, rather than mirroring the fixed dimensions of specific devices.
+The Mobile Boilerplate provides a default placeholder Media Query that can be used to override the primary 'mobile first' styles, providing adjustments for wider viewports (such as tablet devices). It is recommended that you adapt these Media Queries based on the content of your mobile web app, rather than mirroring the fixed dimensions of specific devices.
 
 The mobile boilerplate also provides a second placeholder Media Query to help target high density screens.

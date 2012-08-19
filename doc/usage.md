@@ -1,9 +1,9 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile) | [Documentation
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/) | [Documentation
 table of contents](README.md)
 
 # Usage
 
-Once you have cloned or downloaded HTML5 Mobile Boilerplate, creating a site or app
+Once you have cloned or downloaded Mobile Boilerplate, creating a site or app
 usually involves the following:
 
 1. Set up the basic structure of the site.
@@ -17,12 +17,13 @@ usually involves the following:
 
 ## Basic structure
 
-A basic HTML5 Mobile Boilerplate site initially looks something like this:
+A basic Mobile Boilerplate site initially looks something like this:
 
 ```
 .
 ├── css
-│   └── main.css
+│   ├── main.css
+		└── normalize.css
 ├── doc
 ├── img
 		├── startup
@@ -36,12 +37,15 @@ A basic HTML5 Mobile Boilerplate site initially looks something like this:
 │   └── vendor
 │       ├── zepto.min.js
 │       └── modernizr-2.6.1.min.js
+├── tools
+│   └── [mobile-bookmark-bubble]
 ├── .htaccess
 ├── 404.html
 ├── index.html
 ├── humans.txt
 ├── robots.txt
 ├── crossdomain.xml
+├── sitemap.xml
 ├── favicon.ico
 ```
 
@@ -55,7 +59,7 @@ CSS](css.md).
 
 ### doc
 
-This directory contains all the HTML5 Mobile Boilerplate documentation. You can use it
+This directory contains all the Mobile Boilerplate documentation. You can use it
 as the location and basis for your own project's documentation.
 
 ### js

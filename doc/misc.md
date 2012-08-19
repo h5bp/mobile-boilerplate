@@ -1,10 +1,10 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile) | [Documentation table of contents](README.md)
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/) | [Documentation table of contents](README.md)
 
 # Miscellaneous
 
 ## .gitignore
 
-HTML5 Mobile Boilerplate includes a basic project-level `.gitignore`. This should
+Mobile Boilerplate includes a basic project-level `.gitignore`. This should
 primarily be used to avoid certain project-level files and directories from
 being kept under source control. Different development-environments will
 benefit from different collections of ignores.

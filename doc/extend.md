@@ -1,9 +1,9 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile) | [Documentation
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/) | [Documentation
 table of contents](README.md)
 
-# Extend and customise HTML5 Mobile Boilerplate
+# Extend and customise Mobile Boilerplate
 
-Here is some useful advice for how you can make your project with HTML5 Mobile Boilerplate even better. We don't want to include it all by default, as not everything fits with everyone's needs.
+Here is some useful advice for how you can make your project with Mobile Boilerplate even better. We don't want to include it all by default, as not everything fits with everyone's needs.
 
 ## DNS prefetching
 

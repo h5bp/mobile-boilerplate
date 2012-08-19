@@ -1,6 +1,6 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile/)
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/)
 
-# HTML5 Mobile Boilerplate documentation:
+# Mobile Boilerplate documentation:
 
 MBP (Mobile Boilerplate) is based on H5BP (HTML5 Boilerplate), a rock-solid HTML5 default for web developer to quickly start their mobile web development. This documentation contains docs specific to the MBP; only mobile specific topics are addressed here.
 
@@ -9,7 +9,7 @@ MBP (Mobile Boilerplate) is based on H5BP (HTML5 Boilerplate), a rock-solid HTML
 * [Usage](usage.md) — Overview of the project contents.
 * [FAQ](faq.md) — Frequently asked questions, along with their answers.
 
-## The core of HTML5 Mobile Boilerplate
+## The core of Mobile Boilerplate
 
 * [HTML](html.md) — A guide to the default HTML.
 * [CSS](css.md) — A guide to the default CSS.

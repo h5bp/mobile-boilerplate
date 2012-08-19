@@ -30,7 +30,7 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * Mobile sitemap
 * Mobile bookmark bubble
 * User Agent Detection
-* The latest jQuery via CDN, with a local fallback.
+* The latest Zepto.js
 * A custom Modernizr build for feature detection and a polyfill for CSS Media
   Queries.
 * An optimized Google Analytics snippet.

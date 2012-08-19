@@ -1,4 +1,4 @@
-[HTML5 Mobile Boilerplate homepage](http://html5boilerplate.com/mobile) | [Documentation
+[Mobile Boilerplate homepage](http://mobileboilerplate.com/) | [Documentation
 table of contents](README.md)
 
 # Frequently asked questions
@@ -12,17 +12,7 @@ putting the code at the bottom keeps all the scripts together and reinforces
 that scripts at the bottom are the right move.
 
 
-### What is profiling, and how do I use it, why do I want it?
-
-[Firebug](http://michaelsync.net/2007/09/10/firebug-tutorial-logging-profiling-and-commandline-part-ii)
-and [Chrome Dev
-tools](http://code.google.com/chrome/devtools/docs/profiles.html) offer
-profiling, but there is no easy way to profile IE6 and IE7. If you're focused
-on providing the most responsive experience possible (you should be!) then
-profiling should be part of your development workflow.
-
-
-### Do I need to upgrade my sites each time a new version of HTML5 Mobile Boilerplate is released?
+### Do I need to upgrade my sites each time a new version of Mobile Boilerplate is released?
 
 No. You don't normally replace the foundations of a house once it has been
 built. There is nothing stopping you from trying to work in the latest changes
