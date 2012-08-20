@@ -1,8 +1,9 @@
 == HEAD
 
-* Separate normalize.css from the rest of the CSS.
+* Update to Normalize.css 2.0.1 (#127).
+* Separate Normalize.css from the rest of the CSS.
 * Replace jQuery with Zepto.js as default (#11).
-* Updated HiDPI example media query.
+* Update HiDPI example media query.
 * Various bug fixes to `MBP.fastButton` (#126, #116).
 * Add `MBP.startupImage` helper for apple web app startup images.
 * Add `MBP.preventScrolling` helper to prevent default scrolling on document window.
@@ -15,7 +16,7 @@
 == 3.0.0
 
 * Remove `initial-scale=1.0` from meta.
-* Exclud `scalefix` by default.
+* Exclude `scalefix` by default.
 * Update startup tablet landscape dimensions.
 * Added `lang` attr.
 * Remove `meta` author.

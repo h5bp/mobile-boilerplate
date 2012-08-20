@@ -1,11 +1,11 @@
-/*! normalize.css 2012-08-07T21:27 UTC | MIT License | git.io/normalize */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
 
 /*
- * Corrects `block` display not defined in IE6/7/8/9 & FF3.
+ * Corrects `block` display not defined in IE 8/9.
  */
 
 article,
@@ -23,20 +23,18 @@ summary {
 }
 
 /*
- * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
+ * Corrects `inline-block` display not defined in IE 8/9.
  */
 
 audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 /*
  * Prevents modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS5 devices.
+ * Remove excess height in iOS 5 devices.
  */
 
 audio:not([controls]) {
@@ -45,8 +43,7 @@ audio:not([controls]) {
 }
 
 /*
- * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
- * Known issue: no IE6 support.
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
  */
 
 [hidden] {
@@ -58,33 +55,19 @@ audio:not([controls]) {
    ========================================================================== */
 
 /*
- * 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using
- *    `em` units.
+ * 1. Sets default font family to sans-serif.
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
 
 html {
-    font-size: 100%; /* 1 */
+    font-family: sans-serif; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /*
- * Addresses `font-family` inconsistency between `textarea` and other form
- * elements.
- */
-
-html,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
-}
-
-/*
- * Addresses margins handled incorrectly in IE6/7.
+ * Removes default margin.
  */
 
 body {
@@ -105,7 +88,6 @@ a:focus {
 
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
- * people.opera.com/patrickl/experiments/keyboard/test
  */
 
 a:active,
@@ -118,42 +100,16 @@ a:hover {
    ========================================================================== */
 
 /*
- * Addresses font sizes and margins set differently in IE6/7.
- * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
  */
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin: 0.83em 0;
-}
-
-h3 {
-    font-size: 1.17em;
-    margin: 1em 0;
-}
-
-h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
-}
-
-h5 {
-    font-size: 0.83em;
-    margin: 1.67em 0;
-}
-
-h6 {
-    font-size: 0.75em;
-    margin: 2.33em 0;
 }
 
 /*
- * Addresses styling not present in IE7/8/9, S5, Chrome.
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
  */
 
 abbr[title] {
@@ -161,7 +117,7 @@ abbr[title] {
 }
 
 /*
- * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 
 b,
@@ -169,12 +125,8 @@ strong {
     font-weight: bold;
 }
 
-blockquote {
-    margin: 1em 40px;
-}
-
 /*
- * Addresses styling not present in S5, Chrome.
+ * Addresses styling not present in Safari 5 and Chrome.
  */
 
 dfn {
@@ -182,7 +134,7 @@ dfn {
 }
 
 /*
- * Addresses styling not present in IE6/7/8/9.
+ * Addresses styling not present in IE 8/9.
  */
 
 mark {
@@ -190,18 +142,9 @@ mark {
     color: #000;
 }
 
-/*
- * Addresses margins set differently in IE6/7.
- */
-
-p,
-pre {
-    margin: 1em 0;
-}
 
 /*
- * Corrects font family set oddly in IE6, S4/5, Chrome.
- * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ * Corrects font family set oddly in Safari 5 and Chrome.
  */
 
 code,
@@ -209,7 +152,6 @@ kbd,
 pre,
 samp {
     font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
     font-size: 1em;
 }
 
@@ -224,30 +166,23 @@ pre {
 }
 
 /*
- * Addresses CSS quotes not supported in IE6/7.
+ * Sets consistent quote types.
  */
 
 q {
-    quotes: none;
+    quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /*
- * Addresses `quotes` property not supported in S4.
+ * Addresses inconsistent and variable font size in all browsers.
  */
 
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
 small {
-    font-size: 75%;
+    font-size: 80%;
 }
 
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
- * gist.github.com/413930
  */
 
 sub,
@@ -267,61 +202,19 @@ sub {
 }
 
 /* ==========================================================================
-   Lists
-   ========================================================================== */
-
-/*
- * Addresses margins set differently in IE6/7.
- */
-
-dl,
-menu,
-ol,
-ul {
-    margin: 1em 0;
-}
-
-dd {
-    margin: 0 0 0 40px;
-}
-
-/*
- * Addresses paddings set differently in IE6/7.
- */
-
-menu,
-ol,
-ul {
-    padding: 0 0 0 40px;
-}
-
-/*
- * Corrects list images handled incorrectly in IE7.
- */
-
-nav ul,
-nav ol {
-    list-style: none;
-    list-style-image: none;
-}
-
-/* ==========================================================================
    Embedded content
    ========================================================================== */
 
 /*
- * 1. Removes border when inside `a` element in IE6/7/8/9, FF3.
- * 2. Improves image quality when scaled in IE7.
- *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ * Removes border when inside `a` element in IE 8/9.
  */
 
 img {
-    border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
+    border: 0;
 }
 
 /*
- * Corrects overflow displayed oddly in IE9.
+ * Corrects overflow displayed oddly in IE 9.
  */
 
 svg:not(:root) {
@@ -333,7 +226,7 @@ svg:not(:root) {
    ========================================================================== */
 
 /*
- * Addresses margin not present in IE6/7/8/9, S5, O11.
+ * Addresses margin not present in IE 8/9 and Safari 5.
  */
 
 figure {
@@ -343,14 +236,6 @@ figure {
 /* ==========================================================================
    Forms
    ========================================================================== */
-
-/*
- * Corrects margin displayed oddly in IE6/7.
- */
-
-form {
-    margin: 0;
-}
 
 /*
  * Define consistent border, margin, and padding.
@@ -363,37 +248,33 @@ fieldset {
 }
 
 /*
- * 1. Corrects color not being inherited in IE6/7/8/9.
- * 2. Corrects text not wrapping in FF3.
- * 3. Corrects alignment displayed oddly in IE6/7.
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
 legend {
     border: 0; /* 1 */
-    padding: 0;
-    white-space: normal; /* 2 */
-    *margin-left: -7px; /* 3 */
+    padding: 0; /* 2 */
 }
 
 /*
- * 1. Corrects font size not being inherited in all browsers.
- * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
- * 3. Improves appearance and consistency in all browsers.
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
 
 button,
 input,
 select,
 textarea {
-    font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
-    vertical-align: baseline; /* 3 */
-    *vertical-align: middle; /* 3 */
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
 }
 
 /*
- * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
- * UA stylesheet.
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
  */
 
 button,
@@ -407,8 +288,6 @@ input {
  * 2. Corrects inability to style clickable `input` types in iOS.
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
- * 4. Removes inner spacing in IE7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE6.
  */
 
 button,
@@ -417,7 +296,6 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; /* 2 */
     cursor: pointer; /* 3 */
-    *overflow: visible;  /* 4 */
 }
 
 /*
@@ -430,24 +308,20 @@ input[disabled] {
 }
 
 /*
- * 1. Addresses box sizing set to content-box in IE8/9.
- * 2. Removes excess padding in IE8/9.
- * 3. Removes excess padding in IE7.
- *    Known issue: excess padding remains in IE6.
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
  */
 
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
     padding: 0; /* 2 */
-    *height: 13px; /* 3 */
-    *width: 13px; /* 3 */
 }
 
 /*
- * 1. Addresses `appearance` set to `searchfield` in S5, Chrome.
- * 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz`
- *    to future-proof).
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
  */
 
 input[type="search"] {
@@ -458,7 +332,8 @@ input[type="search"] {
 }
 
 /*
- * Removes inner padding and search cancel button in S5, Chrome on OS X.
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
  */
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -467,7 +342,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /*
- * Removes inner padding and border in FF3+.
+ * Removes inner padding and border in Firefox 4+.
  */
 
 button::-moz-focus-inner,
@@ -477,7 +352,7 @@ input::-moz-focus-inner {
 }
 
 /*
- * 1. Removes default vertical scrollbar in IE6/7/8/9.
+ * 1. Removes default vertical scrollbar in IE 8/9.
  * 2. Improves readability and alignment in all browsers.
  */
 
