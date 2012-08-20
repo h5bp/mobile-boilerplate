@@ -5,6 +5,63 @@ table of contents](README.md)
 
 Here is some useful advice for how you can make your project with Mobile Boilerplate even better. We don't want to include it all by default, as not everything fits with everyone's needs.
 
+## Web Server Configuration
+
+### Transcoding Prevention
+
+Many mobile network operators implemented "content transcoders" or "transcoding proxies" (Vodafone and TeliaSonera are among them). These content transcoders make the desktop web available on mobile devices. One of the side effects is that, already mobile optimized portals are also reformatted, destroying a carefully designed mobile user experience.
+
+The line of code below in the .htaccess file could prevent content transcoders from altering your mobile web content.
+
+`Cache-Control: no-transform`
+
+Read more at the articles below:
+[http://mobiforge.com/developing/blog/responsible-reformatting](http://mobiforge.com/developing/blog/responsible-reformatting)
+[http://mobiforge.com/developing/story/setting-http-headers-advise-transcoding-proxies](http://mobiforge.com/developing/story/setting-http-headers-advise-transcoding-proxies)
+
+### Server side redirection script
+
+Server side mobile redirection script is added at the bottom of the page to detect if user is viewing from mobile device. This is taken from [detect mobile browser](http://detectmobilebrowser.com/). If the script detects the user is viewing from mobile phone, they will be redirected to the mobile version of the site.
+
+Usage Instruction:
+1. This is by default commented out, so to use it, you have to uncomment the lines below.
+2. change the last line http://www.example.com/mobile to the URL of your mobile site.
+
+```apache
+#RewriteEngine On
+#RewriteBase /
+#RewriteCond %{HTTP_USER_AGENT} android|avantgo|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge\ |maemo|midp|mmp|opera\ m(ob|in)i|palm(\ os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows\ (ce|phone)|xda|xiino [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} ^(1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a\ wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r\ |s\ )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1\ u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp(\ i|ip)|hs\-c|ht(c(\-|\ |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac(\ |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt(\ |\/)|klon|kpt\ |kwc\-|kyo(c|k)|le(no|xi)|lg(\ g|\/(k|l|u)|50|54|e\-|e\/|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-|\ |o|v)|zz)|mt(50|p1|v\ )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v\ )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-|\ )|webc|whit|wi(g\ |nc|nw)|wmlb|wonu|x700|xda(\-|2|g)|yas\-|your|zeto|zte\-) [NC]
+# RewriteRule ^$ http://www.example.com/mobile [R,L]
+```
+
+One thing to note is that if you want to allow the user on the mobile version of your site to have the option to switch to desktop version, you may consider using another method like JavaScript or PHP. There is a list of other language support you can consider using:
+ASP, ASP.NET, ColdFusion, C#, IIS, JSP, JavaScript, jQuery, nginx, node.js, PHP, Perl, Python, Rails.
+
+### Mobile MIME Types
+
+There are device specific MIME types made by various mobile vendors. Files with these extensions may not get rendered with the right MIME type by the server.
+
+Here is a list of file extensions that are not supported by default.
+
+```apache
+# Blackberry types
+
+AddType application/x-bb-appworld      bbaw
+AddType text/vnd.rim.location.xloc     xloc
+
+# Nokia types
+
+AddType application/octet-stream            sisx
+AddType application/vnd.symbian.install     sis
+AddType application/java-archive            jar
+AddType application/x-java-archive          jar
+AddType text/vnd.sun.j2me.app-descriptor    jad
+```
+
+* [Apache configuration for mobile application download](http://bit.ly/SJJCND)
+* [How to enable OTA (Over The Air) SIS install from your website](http://bit.ly/ORTLLA)
+
 ## DNS prefetching
 
 In short, DNS Prefetching is a method of informing the browser of domain names
@@ -114,45 +171,6 @@ value your sanity. This is an HTML-centric way of achieving that.
 
 **_WARNING:_** DO NOT INCLUDE ON PAGES THAT SHOULD APPEAR IN SEARCH ENGINES.
 
-## Social Networks
-
-### Facebook Open Graph data
-
-You can control the information that Facebook and others display when users
-share your site. Below are just the most basic data points you might need. For
-specific content types (including "website"), see [Facebook's built-in Open
-Graph content
-templates](https://developers.facebook.com/docs/opengraph/objects/builtin/).
-Take full advantage of Facebook's support for complex data and activity by
-following the [Open Graph
-tutorial](https://developers.facebook.com/docs/opengraph/tutorial/).
-
-```html
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-```
-
-### Twitter Cards
-
-Twitter provides a snippet specification that serves a similar purpose to Open
-Graph. In fact, Twitter will use Open Graph when Cards is not available. Note
-that, as of this writing, Twitter requires that app developers activate Cards
-on a per-domain basis. You can read more about the various snippet formats
-and application process in the [official Twitter Cards
-documentation](https://dev.twitter.com/docs/cards).
-
-```html
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@site_account">
-<meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="http://www.example.com/path/to/page.html">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="http://www.example.com/path/to/image.jpg">
-
-```
-
 ## URLs
 
 ### Canonical URL
@@ -201,11 +219,17 @@ app, or open it with some data about the user's current state on the website.
 
 ## Google Analytics augments
 
+### Google Analytics For Mobile
+
+Low-end mobile devices may not support JavaScript, same as email tracking, to tackle this issue, Google use image download as a tracker.
+
+All the same data that you've come to expect from your Google Analytics reports is now available for mobile websites. Simply paste their server-side code snippets (available for PHP, JSP, ASP.NET, and Perl) on each page you wish to track. Google Analytics then creates a profile for your mobile website where you can view the same kind of information that's in standard Analytics reports including visitor information and traffic sources. You'll be able to track users visiting your mobile website from both high-end "smartphones" and WAP devices. For more information on tracking hits to mobile sites, see the [server-side developer's guide](http://code.google.com/mobile/analytics/docs/web/).
+
 ### More tracking settings
 
 The [optimized Google Analytics
 snippet](http://mathiasbynens.be/notes/async-analytics-snippet) included with
-HTML5 Boilerplate includes something like this:
+Mobile Boilerplate includes something like this:
 
 ```js
 var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
@@ -310,6 +334,10 @@ $(function(){
 * If you're building a web app you may want [native style momentum scrolling in
   iOS5](http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/) using
   `-webkit-overflow-scrolling: touch`.
+
+* Automatic telephone number detection prevention for iOS and Android using
+  `<meta name="format-detection" content="telephone=no">`. 
+  [Safari HTML Reference Supported Meta Tags](http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html)
 
 * Avoid development/stage websites "leaking" into SERPs (search engine results
   page) by [implementing X-Robots-tag
