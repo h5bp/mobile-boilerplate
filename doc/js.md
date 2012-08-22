@@ -21,12 +21,12 @@ MBP.scaleFix();
 
 ### Hide URL Bar
 
-`MBP.hideUrlBar` is used to hide the URL bar at the top of mobile Safari on your iOS. Mobile space is limited and this helps to leverage every pixel on the screen to maximize display area.
+`MBP.hideUrlBarOnLoad` is used to hide the URL bar at the top of mobile Safari on your iOS. Mobile space is limited and this helps to leverage every pixel on the screen to maximize display area.
 
 Usage:
 
 ``` 
-MBP.hideUrlBar();
+MBP.hideUrlBarOnLoad();
 ```
 
 ### Fast Buttons (only use this if you only target webkit browsers, we are still testing out cross-browser support)
