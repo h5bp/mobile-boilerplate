@@ -1,5 +1,7 @@
 == HEAD
 
+== 4.0.0
+
 * Update to Normalize.css 2.0.1 (#127).
 * Separate Normalize.css from the rest of the CSS.
 * Replace jQuery with Zepto.js as default (#11).
