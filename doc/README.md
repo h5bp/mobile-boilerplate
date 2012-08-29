@@ -6,25 +6,25 @@ MBP (Mobile Boilerplate) is based on H5BP (HTML5 Boilerplate), a rock-solid HTML
 
 ## Getting started
 
-* [Usage](usage.md) — Overview of the project contents.
-* [FAQ](faq.md) — Frequently asked questions, along with their answers.
+* [Usage](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/usage.md) — Overview of the project contents.
+* [FAQ](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/faq.md) — Frequently asked questions, along with their answers.
 
 ## The core of Mobile Boilerplate
 
-* [HTML](html.md) — A guide to the default HTML.
-* [CSS](css.md) — A guide to the default CSS.
-* [JavaScript](js.md) — A guide to the default JavaScript.
-* [.htaccess](htaccess.md) — All about the Apache web server config (also see
+* [HTML](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/html.md) — A guide to the default HTML.
+* [CSS](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/css.md) — A guide to the default CSS.
+* [JavaScript](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/js.md) — A guide to the default JavaScript.
+* [.htaccess](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/htaccess.md) — All about the Apache web server config (also see
   our [alternative server configs](https://github.com/h5bp/server-configs)).
-* [crossdomain.xml](crossdomain.md) — An introduction to making use of
+* [crossdomain.xml](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/crossdomain.md) — An introduction to making use of
   crossdomain requests.
-* [Everything else](misc.md).
+* [Everything else](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/misc.md).
 
 ## Development
 
-* [Contributing to Mobile Boilerplate](contribute.md) — Guidelines on how to
+* [Contributing to Mobile Boilerplate](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/contribute.md) — Guidelines on how to
   contribute effectively.
-* [Extending and customizing Mobile Boilerplate](extend.md) — Going further with
+* [Extending and customizing Mobile Boilerplate](https://github.com/h5bp/mobile-boilerplate/blob/master/doc/extend.md) — Going further with
   the boilerplate.
 
 ## Related projects
