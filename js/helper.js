@@ -1,4 +1,3 @@
-
 /**
  * MBP - Mobile boilerplate helper functions
  */
@@ -122,7 +121,7 @@
     };
 
     MBP.fastButton.prototype.onTouchStart = function(event) {
-        var element = event.srcElement;
+        var element = event.target || event.srcElement;
         event.stopPropagation();
         element.addEventListener('touchend', this, false);
         document.body.addEventListener('touchmove', this, false);
@@ -141,7 +140,7 @@
 
     MBP.fastButton.prototype.onClick = function(event) {
         event = event || window.event;
-        var element = event.srcElement;
+        var element = event.target || event.srcElement;
         if (event.stopPropagation) {
             event.stopPropagation();
         }
@@ -155,7 +154,7 @@
     };
 
     MBP.fastButton.prototype.reset = function(event) {
-        var element = event.srcElement;
+        var element = event.target || event.srcElement;
         rmEvt(element, 'touchend', this, false);
         rmEvt(document.body, 'touchmove', this, false);
 
