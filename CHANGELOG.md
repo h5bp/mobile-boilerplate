@@ -1,5 +1,8 @@
 == HEAD
 
+* Add `apple-mobile-web-app-title` to iOS web app meta tags
+* Add CONTRIBUTING.md
+
 == 4.0.0
 
 * Update to Normalize.css 2.0.1 (#127).
