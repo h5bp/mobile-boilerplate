@@ -1,5 +1,6 @@
 == HEAD
 
+* Added meta tag for Win8 tile icon (#143)
 * Further improvements to `console` method stubbing (#142).
 * Update Modernizr to v2.6.2.
 * Changed autogrow helper method to use `input` instead of `keyup` events, so it also triggers on paste.
