@@ -1,3 +1,11 @@
+/* Hide Toolbar on Mobile, Unless there the URL includes a Hash segment */
+if (!window.location.hash && window.addEventListener)
+    window.addEventListener("load",function() {
+        setTimeout(function() {
+            window.scrollTo(0,0);
+        },0);
+    });
+
 /**
  * MBP - Mobile boilerplate helper functions
  */
