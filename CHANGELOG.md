@@ -1,6 +1,7 @@
 == HEAD
 
-* Fixed `MBP.preventScrolling` breaking range input controls when using touch events
+* Added apple-touch-startup image support for iPhone 5 (#147)
+* Fixed `MBP.preventScrolling` breaking range input controls when using touch events (#148)
 * Added meta tag for Win8 tile icon (#143)
 * Further improvements to `console` method stubbing (#142).
 * Update Modernizr to v2.6.2.
