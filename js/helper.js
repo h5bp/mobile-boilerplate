@@ -304,9 +304,10 @@
     /**
      * Prevent default scrolling on document window
      */
-
+     
     MBP.preventScrolling = function() {
         document.addEventListener('touchmove', function(e) {
+            if (e.target.type === 'range') { return; }
             e.preventDefault();
         }, false);
     };
