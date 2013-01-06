@@ -1,5 +1,6 @@
 == HEAD
 
+* Fixed `MBP.preventScrolling` breaking range input controls when using touch events
 * Added meta tag for Win8 tile icon (#143)
 * Further improvements to `console` method stubbing (#142).
 * Update Modernizr to v2.6.2.
