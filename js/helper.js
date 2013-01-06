@@ -365,11 +365,16 @@
             head.appendChild(link2);
         } else {
             portrait = pixelRatio === 2 ? "img/startup/startup-retina.png" : "img/startup/startup.png";
-
+            portrait = screen.height === 568 ? "img/startup/startup-retina-4in.png" : portrait;
             link1 = document.createElement('link');
             link1.setAttribute('rel', 'apple-touch-startup-image');
             link1.setAttribute('href', portrait);
             head.appendChild(link1);
+        }
+
+        //hack to fix letterboxed full screen web apps on 4" iPhone / iPod
+        if ((navigator.platform === 'iPhone' || 'iPod') && (screen.height === 568)) {
+            document.querySelector("meta[name=viewport]").content="width=320.1";
         }
     };
 
