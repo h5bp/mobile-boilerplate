@@ -1,6 +1,7 @@
 == HEAD
 
-* Added apple-touch-startup image support for iPhone 5 (#147)
+* Reinstated `initial-scale=1` in meta viewport
+* Added apple-touch-startup image support for iPhone 5 (#147, #151)
 * Fixed `MBP.preventScrolling` breaking range input controls when using touch events (#148)
 * Added meta tag for Win8 tile icon (#143)
 * Further improvements to `console` method stubbing (#142).
