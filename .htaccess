@@ -564,13 +564,13 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 # ----------------------------------------------------------------------
 
 # Blackberry types - http://goo.gl/A696I
-AddType application/x-bb-appworld      		bbaw
-AddType text/vnd.rim.location.xloc     		xloc
+AddType application/x-bb-appworld           bbaw
+AddType text/vnd.rim.location.xloc          xloc
 
 # Nokia types - http://goo.gl/LU1bM
 # http://wiki.forum.nokia.com/index.php/How_to_enable_OTA_(Over_The_Air)_SIS_install_from_your_website
-AddType application/octet-stream 	   		sisx
-AddType application/vnd.symbian.install 	sis
+AddType application/octet-stream            sisx
+AddType application/vnd.symbian.install     sis
 
 # Prevent mobile transcoding
 # <FilesMatch "\.(php|cgi|pl)$">
