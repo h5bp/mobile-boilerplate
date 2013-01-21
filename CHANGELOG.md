@@ -1,5 +1,6 @@
 == HEAD
 
+* Use 32x32 favicon.ico for HiDPI displays.
 * Remove named function expression in plugins.js
 
 == 4.1.0
