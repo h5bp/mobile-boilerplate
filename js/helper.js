@@ -304,7 +304,7 @@
     /**
      * Prevent default scrolling on document window
      */
-     
+
     MBP.preventScrolling = function() {
         document.addEventListener('touchmove', function(e) {
             if (e.target.type === 'range') { return; }
@@ -323,13 +323,17 @@
         var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
         var i = 0;
 
+        var setViewportOnFocus = function() {
+            MBP.viewportmeta.content = contentString + '1';
+        };
+
+        var setViewportOnBlur = function() {
+            MBP.viewportmeta.content = contentString + '10';
+        };
+
         for (i = 0; i < formFields.length; i++) {
-            formFields[i].onfocus = function() {
-                MBP.viewportmeta.content = contentString + '1';
-            };
-            formFields[i].onblur = function() {
-                MBP.viewportmeta.content = contentString + '10';
-            };
+            formFields[i].onfocus = setViewportOnFocus;
+            formFields[i].onblur = setViewportOnBlur;
         }
     };
 
