@@ -322,6 +322,7 @@
         var formFields = document.querySelectorAll('input, select, textarea');
         var contentString = 'width=device-width,initial-scale=1,maximum-scale=';
         var i = 0;
+        var fieldLength = formFields.length;
 
         var setViewportOnFocus = function() {
             MBP.viewportmeta.content = contentString + '1';
@@ -331,7 +332,7 @@
             MBP.viewportmeta.content = contentString + '10';
         };
 
-        for (i = 0; i < formFields.length; i++) {
+        for (; i < fieldLength; i++) {
             formFields[i].onfocus = setViewportOnFocus;
             formFields[i].onblur = setViewportOnBlur;
         }
