@@ -1,5 +1,7 @@
 == HEAD
 
+* Optimize startup screen images
+
 == 4.1.0
 
 * Update to Normalize.css 2.1.0.
