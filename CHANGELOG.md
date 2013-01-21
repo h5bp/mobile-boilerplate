@@ -1,5 +1,7 @@
 == HEAD
 
+* Remove named function expression in plugins.js
+
 == 4.1.0
 
 * Update to Normalize.css 2.1.0.
