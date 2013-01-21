@@ -1,5 +1,6 @@
 == HEAD
 
+* Update to Normalize.css 2.1.0.
 * Reinstated `initial-scale=1` in meta viewport
 * Added apple-touch-startup image support for iPhone 5 (#147, #151)
 * Fixed `MBP.preventScrolling` breaking range input controls when using touch events (#148)
