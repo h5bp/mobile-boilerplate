@@ -1,5 +1,7 @@
 == HEAD
 
+== 4.1.0
+
 * Update to Normalize.css 2.1.0.
 * Reinstated `initial-scale=1` in meta viewport
 * Added apple-touch-startup image support for iPhone 5 (#147, #151)
