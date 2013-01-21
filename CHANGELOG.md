@@ -1,5 +1,7 @@
 == HEAD
 
+* Use 32x32 favicon.ico for HiDPI displays.
+
 == 4.1.0
 
 * Update to Normalize.css 2.1.0.
