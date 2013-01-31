@@ -45,7 +45,7 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 
 ## Documentation
 
-Take a look at the [documentation table of contents](/h5bp/mobile-boilerplate/blob/master/doc/README.md). This
+Take a look at the [documentation table of contents](doc/README.md). This
 documentation is bundled with the project, which makes it readily available for
 offline reading and provides a useful starting point for any documentation you
 want to write about your project.
@@ -53,4 +53,4 @@ want to write about your project.
 
 ## Contributing
 
-Anyone and everyone is welcome to [contribute](/h5bp/mobile-boilerplate/blob/master/doc/contribute.md).
+Anyone and everyone is welcome to [contribute](CONTRIBUTING.md).
