@@ -1,5 +1,6 @@
 == HEAD
 
+* Added new apple-touch-startup images (#149)
 * Use 32x32 favicon.ico for HiDPI displays.
 * Remove named function expression in plugins.js
 
