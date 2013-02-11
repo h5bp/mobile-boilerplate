@@ -97,5 +97,5 @@ project:
 9. Push your topic branch up to your fork (`git push origin
    <topic-branch-name>`).
 
-10. [Open a Pull Request](http://help.github.com/send-pull-requests/) with a
+10. [Open a Pull Request](https://help.github.com/articles/using-pull-requests) with a
     clear title and description. Please mention which browsers you tested in.
