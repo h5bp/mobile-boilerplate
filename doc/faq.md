@@ -4,7 +4,7 @@ table of contents](README.md)
 # Frequently asked questions
 
 
-### Why is the Google Analytics code at the bottom? Google recommends it be placed the `head`.
+### Why is the Google Analytics code at the bottom? Google recommends it be placed in the `head`.
 
 The advantage to placing it in the `head` is that you will track a user's
 pageview even if they leave the page before it has been fully loaded. However,
