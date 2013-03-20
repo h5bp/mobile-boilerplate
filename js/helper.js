@@ -100,6 +100,8 @@
         // styling of .pressed is defined in the project's CSS files
         this.pressedClass = typeof pressedClass === 'undefined' ? 'pressed' : pressedClass;
 
+        MBP.listenForGhostClicks();
+
         if (element.length && element.length > 1) {
             for (var singleElIdx in element) {
                 this.addClickEvent(element[singleElIdx]);
@@ -201,13 +203,24 @@
     // The browser sniffing is to avoid the Blackberry case. Bah
     MBP.dodgyAndroid = ('ontouchstart' in window) && (navigator.userAgent.indexOf('Android 2.3') != -1);
 
-    if (document.addEventListener) {
-        document.addEventListener('click', MBP.ghostClickHandler, true);
-    }
+    MBP.listenForGhostClicks = (function() {
+        var alreadyRan = false;
 
-    addEvt(document.documentElement, 'touchstart', function() {
-        MBP.hadTouchEvent = true;
-    }, false);
+        return function() {
+            if(alreadyRan) {
+                return;
+            }
+
+            if (document.addEventListener) {
+                document.addEventListener('click', MBP.ghostClickHandler, true);
+            }
+            addEvt(document.documentElement, 'touchstart', function() {
+                MBP.hadTouchEvent = true;
+            }, false);
+
+            alreadyRan = true;
+        };
+    })();
 
     MBP.coords = [];
 
