@@ -19,7 +19,7 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 
 * Mobile browser optimizations.
 * CSS normalizations and common bug fixes.
-* The latest Zepto.js.
+* The latest jQuery.
 * A custom Modernizr build for feature detection and a polyfill for CSS Media
   Queries.
 * Home page icon for Android, iOS, Nokia.

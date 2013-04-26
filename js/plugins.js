@@ -21,4 +21,4 @@
     }
 }());
 
-// Place any Zepto/helper plugins in here.
+// Place any jQuery/helper plugins in here.

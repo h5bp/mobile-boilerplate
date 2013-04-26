@@ -98,14 +98,14 @@ run.
 
 ## plugins.js
 
-This file can be used to contain all your plugins, such as Zepto plugins and other 3rd party scripts.
+This file can be used to contain all your plugins, such as jQuery plugins and other 3rd party scripts.
 
-One approach is to put Zepto plugins inside of a `(function($){ ... })(window.Zepto);` closure to make sure they're in the Zepto namespace safety blanket.
+One approach is to put jQuery plugins inside of a `(function($){ ... })(window.jQuery);` closure to make sure they're in the jQuery namespace safety blanket.
 
 ## vendor
 
 This directory can be used to contain all 3rd party library code.
 
-Minified versions of the latest Zepto and Modernizr libraries are included by
+Minified versions of the latest jQuery and Modernizr libraries are included by
 default. You may wish to create your own [custom Modernizr
 build](http://www.modernizr.com/download/).

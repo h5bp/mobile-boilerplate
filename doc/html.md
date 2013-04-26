@@ -155,11 +155,9 @@ The central part of the boilerplate template is pretty much empty. This is
 intentional, in order to make the boilerplate suitable for both web page and
 web app development.
 
-## Zepto
+## jQuery
 
-HTML5 Mobile Boilerplate comes with the latest version of [Zepto.js](http://zeptojs.com). This is currently version 1.0rc1.
-
-Zepto is a minimalist JavaScript library for modern browsers with a largely jQuery-compatible API. It is a good choice when targeting mobile browsers given that it's lightweight, fast and has some great features for building mobile web apps.
+HTML5 Mobile Boilerplate comes with the latest version of [jQuery](http://jquery.com).
 
 ## Google Analytics Tracking Code
 
