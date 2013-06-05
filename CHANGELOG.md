@@ -1,6 +1,6 @@
 == HEAD
 
-* Update Normalize.css to 2.1.1 (#173)
+* Update Normalize.css to 2.1.2 (#181)
 * Replace Zepto with jQuery 2.0.0 (#152)
 * ghostClickHandler no longer listened for by default, so it plays nice with other 'tap' plugins (#168)
 * Updated Zepto.js to v1.0
