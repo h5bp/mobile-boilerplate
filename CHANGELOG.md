@@ -1,7 +1,8 @@
 == HEAD
 
-* Update Normalize.css to 2.1.2 (#181)
-* Replace Zepto with jQuery 2.0.2 (#152)
+* Update to jQuery 2.0.3 (#185)
+* Update to Normalize.css 2.1.2 (#181)
+* Replace Zepto with jQuery 2.0.0 (#152)
 * ghostClickHandler no longer listened for by default, so it plays nice with other 'tap' plugins (#168)
 * Updated Zepto.js to v1.0
 * Added new apple-touch-startup images (#149)
