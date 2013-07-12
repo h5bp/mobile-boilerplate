@@ -1,5 +1,6 @@
 == HEAD
 
+* Add jQuery Source Maps (#184)
 * Update to jQuery 2.0.3 (#185)
 * Update to Normalize.css 2.1.2 (#181)
 * Replace Zepto with jQuery 2.0.0 (#152)
