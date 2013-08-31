@@ -1,5 +1,6 @@
 == HEAD
 
+* Update to Normalize.css 2.1.3 (#188)
 * Update to Apache Server Configs 1.1.0
 * Add jQuery Source Maps (#184)
 * Update to jQuery 2.0.3 (#185)
