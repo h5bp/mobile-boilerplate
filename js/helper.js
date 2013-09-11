@@ -391,7 +391,8 @@
         }
 
         //hack to fix letterboxed full screen web apps on 4" iPhone / iPod
-        if (navigator.platform.match(/iPhone|iPod/i) && (screen.height === 568)) {
+        // but NOT on iOS 7.0
+        if (navigator.platform.match(/iPhone|iPod/i) && (screen.height === 568) && !navigator.userAgent.match(/\bOS 7_0\b/)) {
             if (MBP.viewportmeta) {
                 MBP.viewportmeta.content = MBP.viewportmeta.content
                     .replace(/\bwidth\s*=\s*320\b/, 'width=320.1')
