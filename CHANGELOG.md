@@ -1,5 +1,6 @@
 == HEAD
 
+* Fixed `MBP.preventZoom` not limited to iOS devices and causing android problems (#190)
 * Fixed `MBP.startupImage` causing width issues on iOS 7 (#189)
 * Update to Normalize.css 2.1.3 (#188)
 * Update to Apache Server Configs 1.1.0
