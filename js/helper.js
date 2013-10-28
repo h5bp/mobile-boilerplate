@@ -63,7 +63,7 @@
         var bodycheck;
 
         // If there's a hash, or addEventListener is undefined, stop here
-        if ( !location.hash && win.addEventListener ) {
+        if ( !win.navigator.standalone && !location.hash && win.addEventListener ) {
 
             // scroll to 1
             window.scrollTo( 0, 1 );
