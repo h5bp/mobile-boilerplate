@@ -1,5 +1,6 @@
 == HEAD
 
+* Update Google Analytics snippet to Universal Analytics (#193)
 * Update to Apache Server Configs 2.0.0
 * Fixed `MBP.startupImage` causing width issues on iOS 7 (#189)
 * Update to Normalize.css 2.1.3 (#188)
