@@ -22,6 +22,7 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * The latest jQuery.
 * A custom Modernizr build for feature detection and a polyfill for CSS Media
   Queries.
+* FT FastClick polyfill to remove click delays on browsers with touch UIs.
 * Home page icon for Android, iOS, Nokia.
 * Cross-browser viewport optimization for Android, iOS, Mobile IE, Nokia,
   and Blackberry.
