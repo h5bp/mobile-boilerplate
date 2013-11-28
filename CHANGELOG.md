@@ -1,5 +1,6 @@
 == HEAD
 
+* Update to Modernizr 2.7.0 (#195)
 * Update Google Analytics snippet to Universal Analytics (#193)
 * Update to Apache Server Configs 2.0.0
 * Fixed `MBP.preventZoom` not limited to iOS devices and causing android problems (#190)
