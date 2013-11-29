@@ -1,5 +1,6 @@
 == HEAD
 
+* Add to homescreen support for Chrome Mobile (#196)
 * Update to Modernizr 2.7.0 (#195)
 * Update Google Analytics snippet to Universal Analytics (#193)
 * Update to Apache Server Configs 2.0.0
