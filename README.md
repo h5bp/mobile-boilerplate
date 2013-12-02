@@ -22,9 +22,10 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * The latest jQuery.
 * A custom Modernizr build for feature detection and a polyfill for CSS Media
   Queries.
-* Home page icon for Android, iOS, Nokia.
+* Home page icon for Android, iOS, Nokia, Firefox
 * Cross-browser viewport optimization for Android, iOS, Mobile IE, Nokia,
   and Blackberry.
+* Open Web App support for Firefox for Android and Firefox OS
 * Better font rendering in Mobile IE.
 * iPhone web app meta.
 * INSTANT button click event.

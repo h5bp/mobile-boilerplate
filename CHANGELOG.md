@@ -1,5 +1,6 @@
 == HEAD
 
+* Add support for Open Web Apps (#197)
 * Remove mobile-bookmark-bubble.
 * Remove conditional comment for Windows Phone 7
 * Update jQuery to v2.1.0
