@@ -86,7 +86,7 @@
                         MBP.hideUrlBar();
                     }
                 }, 0);
-            });
+            }, false);
         }
     };
 
