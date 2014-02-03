@@ -1,8 +1,8 @@
 == HEAD
 
+* Update to Apache Server Configs 2.2.0.
 * Option to add canonical link to desktop site. (#204)
 * Redesign 404 page (#202)
-* Update to Apache Server Configs 2.1.0
 * Update to Modernizr 2.7.1 (#201)
 * Hide URL Bar in iOS7 (#199)
 * Add to homescreen support for Chrome Mobile (#196)
