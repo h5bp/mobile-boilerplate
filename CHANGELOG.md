@@ -1,5 +1,6 @@
 == HEAD
 
+* Update jQuery to v2.1.0
 * Update Normalize.css to v3.0.0
 * Update to Apache Server Configs 2.2.0.
 * Option to add canonical link to desktop site. (#204)
