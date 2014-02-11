@@ -3,15 +3,6 @@ table of contents](README.md)
 
 # The HTML
 
-## Conditional comment for Window Phone 7
-
-```html
-<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"...> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"...> <!--<![endif]-->
-```
-
-Conditional comment to add class `iem7` for Window Phone 7
-
 
 ## The `no-js` class
 
