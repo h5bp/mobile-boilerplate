@@ -13,7 +13,7 @@ A JavaScript helper file is included in the boilerplate with namespace MBP. It c
 
 `MBP.scaleFix` is used to fix the iPhone reflow scale bug, read more about it here: a fix for iphone viewport scale bug
 
-Usage: 
+Usage:
 
 ```
 MBP.scaleFix();
@@ -25,18 +25,8 @@ MBP.scaleFix();
 
 Usage:
 
-``` 
+```
 MBP.hideUrlBarOnLoad();
-```
-
-### Fast Buttons (only use this if you only target webkit browsers, we are still testing out cross-browser support)
-
-`MBP.fastButton` is used to make instant responsive buttons, 300ms faster to be exact. (It uses `touchstart` to detect click event.) 
-
-Usage:
-
-```
-new MBP.fastButton(document.getElementById('myBtn'), function() {alert("clicked")});
 ```
 
 ### Autogrow textarea
@@ -45,7 +35,7 @@ new MBP.fastButton(document.getElementById('myBtn'), function() {alert("clicked"
 
 Usage:
 
-``` 
+```
 new MBP.autogrow(document.getElementById('myTextarea'), 14); // 14 -- line height
 ```
 
@@ -109,3 +99,5 @@ This directory can be used to contain all 3rd party library code.
 Minified versions of the latest jQuery and Modernizr libraries are included by
 default. You may wish to create your own [custom Modernizr
 build](http://www.modernizr.com/download/).
+
+[FastClick](https://github.com/ftlabs/fastclick) polyfill is also included to remove click delays on browsers with touch UIs.

@@ -1,5 +1,6 @@
 == HEAD
 
+* Switch to using FT FastClick polyfill to remove click delays on browsers with touch (#194)
 * Remove conditional comment for Windows Phone 7
 * Update jQuery to v2.1.0
 * Update Normalize.css to v3.0.0
