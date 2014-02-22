@@ -325,6 +325,15 @@ $(function(){
 });
 ```
 
+### Add to home screen plugins for mobile web app installation
+
+There are various JS plugins available to help facilitate installing mobile web apps
+to the home screen.
+
+ * [Mobile Bookmark Bubble](http://code.google.com/p/mobile-bookmark-bubble/) (Mobile Safari only).
+ * [Add to Home Screen](https://github.com/cubiq/add-to-homescreen) (Mobile Safari only).
+ * [jQuery Mobile Bookmark Bubble](https://github.com/okamototk/jqm-mobile-bookmark-bubble) (Mobile Safari, Android, BlackBerry).
+ * [Concierge](https://github.com/alexgibson/concierge) (Firefox OS, Firefox for Android).
 
 ## Miscellaneous
 
@@ -336,7 +345,7 @@ $(function(){
   `-webkit-overflow-scrolling: touch`.
 
 * Automatic telephone number detection prevention for iOS and Android using
-  `<meta name="format-detection" content="telephone=no">`. 
+  `<meta name="format-detection" content="telephone=no">`.
   [Safari HTML Reference Supported Meta Tags](http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html)
 
 * Avoid development/stage websites "leaking" into SERPs (search engine results

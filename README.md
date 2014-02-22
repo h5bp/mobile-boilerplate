@@ -25,7 +25,6 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * Home page icon for Android, iOS, Nokia.
 * Cross-browser viewport optimization for Android, iOS, Mobile IE, Nokia,
   and Blackberry.
-* Mobile IE conditional switch.
 * Better font rendering in Mobile IE.
 * iPhone web app meta.
 * INSTANT button click event.
@@ -33,7 +32,6 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * Hide URL bar method.
 * Prevent form zoom onfocus method.
 * Mobile site redirection.
-* Mobile bookmark bubble.
 * User Agent Detection.
 * An optimized Google Analytics snippet.
 * Apache server caching, compression, and other configuration defaults for
