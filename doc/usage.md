@@ -28,7 +28,7 @@ A basic Mobile Boilerplate site initially looks something like this:
 │   ├── startup
 │   │   └── [apple-startup-images]
 │   └── touch
-│       └── [apple-touch-icons]
+│       └── [mobile-touch-icons]
 ├── js
 │   ├── helper.js
 │   ├── main.js
@@ -43,6 +43,7 @@ A basic Mobile Boilerplate site initially looks something like this:
 ├── index.html
 ├── humans.txt
 ├── robots.txt
+├── manifest.webapp
 ├── crossdomain.xml
 └── favicon.ico
 ```
@@ -100,6 +101,12 @@ technology powering it.
 ### robots.txt
 
 Edit this file to include any pages you need hidden from search engines.
+
+### manifest.webapp
+
+Edit this [manifest](https://developer.mozilla.org/Apps/Developing/Manifest) file to include information about your mobile web app
+if you would like to add [Open Web App](https://developer.mozilla.org/Apps) support for Firefox OS devices
+as well as Firefox for Android.
 
 ### crossdomain.xml
 
