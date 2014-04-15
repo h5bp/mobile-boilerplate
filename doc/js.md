@@ -11,7 +11,7 @@ A JavaScript helper file is included in the boilerplate with namespace MBP. It c
 
 ### iPhone Scale Bug Fix
 
-`MBP.scaleFix` is used to fix the iPhone reflow scale bug, read more about it here: a fix for iphone viewport scale bug
+`MBP.scaleFix` is used to fix the iPhone reflow scale bug, read more about it here: [a fix for iphone viewport scale bug](http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/)
 
 Usage: 
 
