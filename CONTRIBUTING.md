@@ -1,6 +1,6 @@
 # Contributing to Mobile Boilerplate
 
-♥ [Mobile Boilerplate](http://mobileboilerplate.com) and want to get involved?
+♥ [Mobile Boilerplate](http://html5boilerplate.com/mobile/) and want to get involved?
 Thanks! There are plenty of ways you can help!
 
 

@@ -1,11 +1,11 @@
-# [Mobile Boilerplate](http://mobileboilerplate.com/)
+# [Mobile Boilerplate](http://html5boilerplate.com/mobile/)
 
 Mobile Boilerplate is a professional front-end template that helps you build
 fast and robust mobile web applications. Spend more time developing and less
 time reinventing the wheel.
 
 * Source: [https://github.com/h5bp/mobile-boilerplate](https://github.com/h5bp/mobile-boilerplate)
-* Homepage: [http://mobileboilerplate.com](http://mobileboilerplate.com)
+* Homepage: [http://html5boilerplate.com/mobile/](http://html5boilerplate.com/mobile/)
 * Twitter: [@h5bp](http://twitter.com/h5bp)
 
 
