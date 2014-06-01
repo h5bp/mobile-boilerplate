@@ -1,5 +1,7 @@
 == HEAD
 
+== 4.1.2
+
 * Update to Apache Server Configs 2.3.0
 * Add support for Open Web Apps (#197)
 * Remove mobile-bookmark-bubble.
