@@ -1,5 +1,7 @@
 == HEAD
 
+* Update to Apache Server Configs 2.4.0
+
 == 4.1.2
 
 * Update to Apache Server Configs 2.3.0
