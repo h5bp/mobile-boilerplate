@@ -1,5 +1,6 @@
 == HEAD
 
+* Update jQuery to v2.1.1
 * Update to Apache Server Configs 2.4.0
 
 == 4.1.2
