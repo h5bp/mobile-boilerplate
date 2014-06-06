@@ -1,6 +1,7 @@
 == HEAD
 
-* Update jQuery to v2.1.1
+* Update Modernizr to v2.8.2
+* Update jQuery to v2.1.1 (#210)
 * Update to Apache Server Configs 2.4.0
 
 == 4.1.2
