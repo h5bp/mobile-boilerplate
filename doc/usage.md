@@ -34,7 +34,7 @@ A basic Mobile Boilerplate site initially looks something like this:
 │   ├── main.js
 │   ├── plugins.js
 │   └── vendor
-│       ├── modernizr-2.7.1.min.js
+│       ├── modernizr-2.8.2.min.js
 │       └── jquery-2.0.0.min.js
 ├── tools
 │   └── [mobile-bookmark-bubble]
