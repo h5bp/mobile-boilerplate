@@ -6,6 +6,7 @@
 
 == 4.1.2
 
+* Update Normalize.css to v3.0.1 (#214)
 * Update to Apache Server Configs 2.3.0
 * Add support for Open Web Apps (#197)
 * Remove mobile-bookmark-bubble.
