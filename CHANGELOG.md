@@ -1,8 +1,8 @@
 == HEAD
 
+* Update to Apache Server Configs 2.6.0
 * Update Normalize.css to v3.0.1 (#214)
 * Update Modernizr to v2.8.2 (#211)
-* Update to Apache Server Configs 2.5.0
 * Update jQuery to v2.1.1 (#210)
 
 == 4.1.2
