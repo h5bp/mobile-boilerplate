@@ -1,7 +1,8 @@
 == HEAD
 
+* Update to Apache Server Configs 2.7.0
+* Add `Disallow:` to `robots.txt`
 * Update Modernizr to v2.8.3 (update to v2.8.2 see #211)
-* Update to Apache Server Configs 2.6.0
 * Update Normalize.css to v3.0.1 (#214)
 * Update jQuery to v2.1.1 (#210)
 
