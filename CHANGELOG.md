@@ -1,9 +1,9 @@
 == HEAD
 
+* Update to Apache Server Configs 2.7.1
 * Add `timeline` and `timelineEnd` to the list of `console` methods (#221)
 * Use short version of shorthand for margin declaration in 404.html
 * Remove need to readjust margins in `404.html`
-* Update to Apache Server Configs 2.7.0
 * Add `Disallow:` to `robots.txt`
 * Update Modernizr to v2.8.3 (update to v2.8.2 see #211)
 * Update Normalize.css to v3.0.1 (#214)
