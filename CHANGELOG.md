@@ -1,5 +1,6 @@
 == HEAD
 
+* Add `timeline` and `timelineEnd` to the list of `console` methods (#221)
 * Use short version of shorthand for margin declaration in 404.html
 * Remove need to readjust margins in `404.html`
 * Update to Apache Server Configs 2.7.0
