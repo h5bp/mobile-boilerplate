@@ -1,5 +1,7 @@
 == HEAD
 
+* Add `lang=""` to `<html>`
+  (https://github.com/h5bp/html5-boilerplate/commit/d916a720253d171a9b54818f2a07d14acbd2e4c7)
 * Update to Apache Server Configs 2.7.1
 * Add `timeline` and `timelineEnd` to the list of `console` methods (#221)
 * Use short version of shorthand for margin declaration in 404.html
