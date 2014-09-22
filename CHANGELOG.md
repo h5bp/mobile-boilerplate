@@ -1,5 +1,6 @@
 == HEAD
 
+* Use `<!doctype html>` instead of `<!DOCTYPE html>`
 * Update to Apache Server Configs 2.8.0
 * Add `lang=""` to `<html>`
   ([h5bp/html5-boilerplate@d916a72](https://github.com/h5bp/html5-boilerplate/commit/d916a720253d171a9b54818f2a07d14acbd2e4c7))
