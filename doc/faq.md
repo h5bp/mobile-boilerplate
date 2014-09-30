@@ -22,4 +22,4 @@ but you'll have to assess the costs/benefits of doing so.
 ### Where can I get help for support questions?
 
 Please ask for help on
-[StackOverflow](https://stackoverflow.com/questions/tagged/html5boilerplate).
+[StackOverflow](http://stackoverflow.com/questions/tagged/html5boilerplate).
