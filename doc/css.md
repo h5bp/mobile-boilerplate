@@ -19,7 +19,7 @@ development preferences happen to be.
 
 Normalize.css is a modern, HTML5-ready alternative to CSS resets. It contains
 extensive inline documentation. Please refer to the [Normalize.css
-project](https://necolas.github.com/normalize.css/) for more information.
+project](http://necolas.github.com/normalize.css/) for more information.
 
 
 ## Mobile Boilerplate defaults
