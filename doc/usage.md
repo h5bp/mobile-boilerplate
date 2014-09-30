@@ -88,7 +88,8 @@ need to integrate this starting HTML with your setup.
 Make sure that you update the URLs for the referenced CSS and JavaScript if you
 modify the directory structure at all.
 
-If you are using Google Analytics, make sure that you edit the corresponding snippet at the bottom to include your analytics ID.
+If you are using Google Analytics, make sure that you edit the corresponding
+snippet at the bottom to include your analytics ID.
 
 ### humans.txt
 
@@ -115,4 +116,4 @@ crossdomain.xml](crossdomain.md).
 Replace the default `favicon.ico`, apple touch icons and startup images with your own. You
 might want to check out Hans Christian's handy [HTML5 Boilerplate Favicon and
 Apple Touch Icon
-PSD-Template](https://drublic.de/blog/html5-boilerplate-favicons-psd-template/).
+PSD-Template](http://drublic.de/blog/html5-boilerplate-favicons-psd-template/).
