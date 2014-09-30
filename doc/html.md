@@ -14,22 +14,22 @@ FOUC](http://paulirish.com/2009/avoiding-the-fouc-v3/).
 ## The order of meta tags, and `<title>`
 
 As recommended by [the HTML5
-spec](https://html.spec.whatwg.org/multipage/semantics.html#charset)
+spec](http://www.whatwg.org/specs/web-apps/current-work/complete/semantics.html#charset)
 (4.2.5.5 Specifying the document's character encoding), add your charset
 declaration early (before any ASCII art ;) to avoid a potential
 [encoding-related security
-issue](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7) in IE. It
+issue](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7) in IE. It
 should come in the first [1024
-bytes](https://html.spec.whatwg.org/multipage/semantics.html#charset1024).
+bytes](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#charset).
 
 The charset should also come before the `<title>` tag, due to [potential XSS
-vectors](https://code.google.com/p/doctype-mirror/wiki/ArticleUtf7).
+vectors](http://code.google.com/p/doctype-mirror/wiki/ArticleUtf7).
 
 The meta tag for compatibility mode [needs to be before all elements except
 title and meta](http://h5bp.com/f "Defining Document Compatibility - MSDN").
 And that same meta tag can only be invoked for Google Chrome Frame if it is
 within the [first 1024
-bytes](https://code.google.com/p/chromium/issues/detail?id=23003).
+bytes](http://code.google.com/p/chromium/issues/detail?id=23003).
 
 ## Mobile viewport
 
@@ -87,7 +87,7 @@ For non-Retina iPhone, iPod Touch, and Android 2.1+ devices
 <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
 ```
 
-For a comprehensive overview, please read [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons) by Mathias Bynens.
+For a comprehensive overview, please read [Everything you always wanted to know about touch icons](http://mathiasbynens.be/notes/touch-icons) by Mathias Bynens.
 
 For Nokia devices
 
@@ -97,7 +97,7 @@ For Nokia devices
 <meta http-equiv="cleartype" content="on">
 ```
 
-Mobile Internet Explorer allows us to activate [ClearType](https://www.microsoft.com/typography/whatiscleartype.mspx) technology for smoothing fonts for easy reading
+Mobile Internet Explorer allows us to activate [ClearType](http://www.microsoft.com/typography/whatiscleartype.mspx) technology for smoothing fonts for easy reading
 
 ## iOS web app
 
@@ -156,7 +156,7 @@ web app development.
 
 ## jQuery
 
-HTML5 Mobile Boilerplate comes with the latest version of [jQuery](https://jquery.com).
+HTML5 Mobile Boilerplate comes with the latest version of [jQuery](http://jquery.com).
 
 ## Google Analytics Tracking Code
 
@@ -169,6 +169,6 @@ number of simultaneous connections of the browser.
 Further information:
 
 * [Optimizing the asynchronous Google Analytics
-  snippet](https://mathiasbynens.be/notes/async-analytics-snippet).
+  snippet](http://mathiasbynens.be/notes/async-analytics-snippet).
 * [Tracking Site Activity - Google
-  Analytics](https://developers.google.com/analytics/devguides/collection/gajs/asyncTracking).
+  Analytics](http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html).
