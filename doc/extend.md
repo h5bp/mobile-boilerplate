@@ -59,8 +59,8 @@ AddType application/x-java-archive          jar
 AddType text/vnd.sun.j2me.app-descriptor    jad
 ```
 
-* [Apache configuration for mobile application download](http://bit.ly/SJJCND)
-* [How to enable OTA (Over The Air) SIS install from your website](http://bit.ly/ORTLLA)
+* [Apache configuration for mobile application download](https://bit.ly/SJJCND)
+* [How to enable OTA (Over The Air) SIS install from your website](https://bit.ly/ORTLLA)
 
 ## DNS prefetching
 
@@ -143,8 +143,7 @@ on blogs.msdn.com)
 ### Further reading about DNS prefetching
 
 * https://developer.mozilla.org/En/Controlling_DNS_prefetching
-* http://dev.chromium.org/developers/design-documents/dns-prefetching
-* http://www.apple.com/safari/whats-new.html
+* https://dev.chromium.org/developers/design-documents/dns-prefetching
 * http://blogs.msdn.com/b/ie/archive/2011/03/17/internet-explorer-9-network-performance-improvements.aspx
 * http://dayofjs.com/videos/22158462/web-browsers_alex-russel
 
@@ -153,7 +152,7 @@ on blogs.msdn.com)
 
 ### Direct search spiders to your sitemap
 
-[Learn how to make a sitemap](http://www.sitemaps.org/protocol.php)
+[Learn how to make a sitemap](http://www.sitemaps.org/protocol.html)
 
 ```html
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -223,12 +222,12 @@ app, or open it with some data about the user's current state on the website.
 
 Low-end mobile devices may not support JavaScript, same as email tracking, to tackle this issue, Google use image download as a tracker.
 
-All the same data that you've come to expect from your Google Analytics reports is now available for mobile websites. Simply paste their server-side code snippets (available for PHP, JSP, ASP.NET, and Perl) on each page you wish to track. Google Analytics then creates a profile for your mobile website where you can view the same kind of information that's in standard Analytics reports including visitor information and traffic sources. You'll be able to track users visiting your mobile website from both high-end "smartphones" and WAP devices. For more information on tracking hits to mobile sites, see the [server-side developer's guide](http://code.google.com/mobile/analytics/docs/web/).
+All the same data that you've come to expect from your Google Analytics reports is now available for mobile websites. Simply paste their server-side code snippets (available for PHP, JSP, ASP.NET, and Perl) on each page you wish to track. Google Analytics then creates a profile for your mobile website where you can view the same kind of information that's in standard Analytics reports including visitor information and traffic sources. You'll be able to track users visiting your mobile website from both high-end "smartphones" and WAP devices. For more information on tracking hits to mobile sites, see the [server-side developer's guide](https://code.google.com/mobile/analytics/docs/web/).
 
 ### More tracking settings
 
 The [optimized Google Analytics
-snippet](http://mathiasbynens.be/notes/async-analytics-snippet) included with
+snippet](https://mathiasbynens.be/notes/async-analytics-snippet) included with
 Mobile Boilerplate includes something like this:
 
 ```js
@@ -237,7 +236,7 @@ var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
 
 In case you need more settings, just extend the array literal instead of
 [`.push()`ing to the
-array](http://mathiasbynens.be/notes/async-analytics-snippet#dont-push-it)
+array](https://mathiasbynens.be/notes/async-analytics-snippet#dont-push-it)
 afterwards:
 
 ```js
@@ -251,7 +250,7 @@ that do not have similarly strict laws (i.e. from Germany to outside the EU).
 Thus a webmaster using the Google Analytics script may have to ensure that no
 personal (trackable) data is transferred to the US. You can do that with [the
 `_gat.anonymizeIp`
-option](http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp).
+option](https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced#anonymizeip).
 In use it looks like this:
 
 ```js
@@ -330,7 +329,7 @@ $(function(){
 There are various JS plugins available to help facilitate installing mobile web apps
 to the home screen.
 
- * [Mobile Bookmark Bubble](http://code.google.com/p/mobile-bookmark-bubble/) (Mobile Safari only).
+ * [Mobile Bookmark Bubble](https://code.google.com/p/mobile-bookmark-bubble/) (Mobile Safari only).
  * [Add to Home Screen](https://github.com/cubiq/add-to-homescreen) (Mobile Safari only).
  * [jQuery Mobile Bookmark Bubble](https://github.com/okamototk/jqm-mobile-bookmark-bubble) (Mobile Safari, Android, BlackBerry).
  * [Concierge](https://github.com/alexgibson/concierge) (Firefox OS, Firefox for Android).
@@ -341,12 +340,12 @@ to the home screen.
   polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills).
 
 * If you're building a web app you may want [native style momentum scrolling in
-  iOS5](http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/) using
+  iOS5](http://www.johanbrook.com/articles/native-style-momentum-scrolling-to-arrive-in-ios-5/) using
   `-webkit-overflow-scrolling: touch`.
 
 * Automatic telephone number detection prevention for iOS and Android using
   `<meta name="format-detection" content="telephone=no">`.
-  [Safari HTML Reference Supported Meta Tags](http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html)
+  [Safari HTML Reference Supported Meta Tags](https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html)
 
 * Avoid development/stage websites "leaking" into SERPs (search engine results
   page) by [implementing X-Robots-tag

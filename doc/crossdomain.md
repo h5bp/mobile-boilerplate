@@ -14,7 +14,7 @@ custom headers in cross-domain requests, and are also used with sockets to
 grant permissions for socket-based connections.
 
 For full details, check out Adobe's article about the [cross-domain policy file
-specification](http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html)
+specification](https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html)
 
 Read the [Cross-domain policy file
-specification](http://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/CrossDomain_PolicyFile_Specification.pdf).
+specification](https://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/CrossDomain_PolicyFile_Specification.pdf).
