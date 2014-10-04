@@ -1,5 +1,6 @@
 == HEAD
 
+* Update Normalize.css to v3.0.2
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
 * Update to Apache Server Configs 2.8.0
 * Add `lang=""` to `<html>`
@@ -9,7 +10,6 @@
 * Remove need to readjust margins in `404.html`
 * Add `Disallow:` to `robots.txt`
 * Update Modernizr to v2.8.3 (update to v2.8.2 see #211)
-* Update Normalize.css to v3.0.1 (#214)
 * Update jQuery to v2.1.1 (#210)
 
 == 4.1.2
