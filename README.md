@@ -11,7 +11,7 @@ time reinventing the wheel.
 
 ## Quick start
 
-Clone the git repo - `git clone git://github.com/h5bp/mobile-boilerplate.git` -
+Clone the git repo - `git clone https://github.com/h5bp/mobile-boilerplate.git` -
 or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 
 
