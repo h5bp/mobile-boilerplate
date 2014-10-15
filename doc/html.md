@@ -57,39 +57,38 @@ Media Queries - The Complete Idiot's Guide"). You can find out more in [the
 Apple developer docs](http://j.mp/mobileviewport). HTML5 Mobile Boilerplate comes with
 a simple setup that strikes a good balance for general use cases.
 
-## Home screen icon set
+## Touch Icons
+
+Touch Icons can be seen as the favicons of mobile devices and tablets.
 
 ```html
- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 ```
 
-For the third generation iPad with high-resolution Retina Display
+The main sizes of the icons for IOS are:
 
-```html
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-```
+* `57×57px` – iPhone with @1x display and iPod Touch, Android stock browser
+* `72×72px` – iPad and iPad mini with @1x display running iOS ≤ 6
+* `76×76px` – iPad and iPad mini with @1x display running iOS ≥ 7
+* `114×114px` – iPhone with @2x display running iOS ≤ 6
+* `120×120px` – iPhone with @2x and @3x display running iOS ≥ 7
+* `144×144px` – iPad and iPad mini with @2x display running iOS ≤ 6
+* `152×152px` – iPad and iPad mini with @2x display running iOS 7
+* `180×180px` – iPad and iPad mini with @2x display running iOS 8
 
-For the iPhone 4 with high-resolution Retina Display
+Displays meaning:
 
-```html
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-```
+* @1x - non-Retina
+* @2x - Retina
+* @3x - Retina HD
 
-For the first-generation iPad
+More information about the displays of iOS devices can be found
+[here](https://en.wikipedia.org/wiki/List_of_iOS_devices#Display).
 
-```html
-<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-```
+Also, there are `192x192px` and `128x128px` icons included for Chrome 31+.
 
-For non-Retina iPhone, iPod Touch, and Android 2.1+ devices
-
-```html
-<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-```
-
-For a comprehensive overview, please read [Everything you always wanted to know about touch icons](https://mathiasbynens.be/notes/touch-icons) by Mathias Bynens.
-
-For Nokia devices
+For a more comprehensive overview, please refer to Mathias' [article on Touch
+Icons](https://mathiasbynens.be/notes/touch-icons).
 
 ## Mobile Internet Explorer ClearType Technology
 
