@@ -36,7 +36,8 @@ a:hover {
 }
 
 /*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ * Remove the gap between images and the bottom of their containers
+ * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 img {
@@ -130,7 +131,8 @@ textarea[contenteditable] {
 }
 
 /*
- * Hide from both screenreaders and browsers: h5bp.com/u
+ * Hide from both screenreaders and browsers
+ * http://juicystudio.com/article/screen-readers-display-none.php
  */
 
 .hidden {
@@ -139,7 +141,8 @@ textarea[contenteditable] {
 }
 
 /*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ * Hide only visually, but have it available for screenreaders
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
 .visuallyhidden {
@@ -155,7 +158,7 @@ textarea[contenteditable] {
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
+ * when navigated to via the keyboard: https://www.drupal.org/node/897638
  */
 
 .visuallyhidden.focusable:active,
@@ -178,7 +181,7 @@ textarea[contenteditable] {
 
 /**
  * Clearfix helper
- * Used to contain floats: h5bp.com/q
+ * Used to contain floats: http://nicolasgallagher.com/micro-clearfix-hack/
  */
 
 .clearfix:before,
