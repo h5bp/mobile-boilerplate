@@ -1,7 +1,7 @@
 == HEAD
 
+* Update Apache Server Configs to v2.10.0
 * Update _"Apple touch icons"_
-* Update to Apache Server Configs 2.9.0
 * Update Normalize.css to v3.0.2
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
 * Add `lang=""` to `<html>`
