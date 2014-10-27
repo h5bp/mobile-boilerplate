@@ -1,6 +1,6 @@
 == HEAD
 
-* Update Apache Server Configs to v2.10.0
+* Update Apache Server Configs to v2.11.0
 * Update _"Apple touch icons"_
 * Update Normalize.css to v3.0.2
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
