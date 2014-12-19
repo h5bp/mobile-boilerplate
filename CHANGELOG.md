@@ -1,5 +1,6 @@
 == HEAD
 
+* Update jQuery to v2.1.3
 * Update Apache Server Configs to v2.11.0
 * Update _"Apple touch icons"_
 * Update Normalize.css to v3.0.2
@@ -11,7 +12,6 @@
 * Remove need to readjust margins in `404.html`
 * Add `Disallow:` to `robots.txt`
 * Update Modernizr to v2.8.3 (update to v2.8.2 see #211)
-* Update jQuery to v2.1.1 (#210)
 
 == 4.1.2
 
