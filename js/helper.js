@@ -68,7 +68,7 @@
         if ( !win.navigator.standalone && !location.hash && win.addEventListener ) {
 
             // scroll to 1
-            window.scrollTo( 0, 1 );
+            win.scrollTo( 0, 1 );
             MBP.BODY_SCROLL_TOP = 1;
 
             // reset to 0 on bodyready, if needed
