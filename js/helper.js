@@ -44,7 +44,7 @@
     // we call hideUrlBar
     MBP.getScrollTop = function() {
         var win = window;
-        var doc = document;
+        var doc = win.document;
 
         return win.pageYOffset || doc.compatMode === 'CSS1Compat' && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
     };
