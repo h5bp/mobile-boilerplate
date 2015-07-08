@@ -1,4 +1,4 @@
-[Mobile Boilerplate homepage](http://html5boilerplate.com/mobile/) | [Documentation
+[Mobile Boilerplate homepage](https://html5boilerplate.com/mobile/) | [Documentation
 table of contents](README.md)
 
 # The CSS

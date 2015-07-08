@@ -1,4 +1,4 @@
-[Mobile Boilerplate homepage](http://html5boilerplate.com/mobile/) | [Documentation
+[Mobile Boilerplate homepage](https://html5boilerplate.com/mobile/) | [Documentation
 table of contents](README.md)
 
 # The HTML
@@ -8,7 +8,7 @@ table of contents](README.md)
 
 Allows you to more easily explicitly add custom styles when JavaScript is
 disabled (`no-js`) or enabled (`js`). More here: [Avoiding the
-FOUC](http://paulirish.com/2009/avoiding-the-fouc-v3/).
+FOUC](https://paulirish.com/2009/avoiding-the-fouc-v3/).
 
 
 ## The order of meta tags, and `<title>`
@@ -115,7 +115,7 @@ Styles the bar at the top of the browser
 ## Canonical link to the desktop version for SEO
 
 ```html
-<link rel="canonical" href="http://www.example.com/" >
+<link rel="canonical" href="http://www.example.com/">
 ```
 
 Websites with separate URLs for desktop and mobile websites need to have a canonical link on mobile site pointing back to the desktop version for SEO. More information on [Google Webmaster Docs](https://developers.google.com/webmasters/smartphone-sites/details#separateurls).

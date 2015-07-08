@@ -1,6 +1,6 @@
 # Contributing to Mobile Boilerplate
 
-♥ [Mobile Boilerplate](http://html5boilerplate.com/mobile/) and want to get involved?
+♥ [Mobile Boilerplate](https://html5boilerplate.com/mobile/) and want to get involved?
 Thanks! There are plenty of ways you can help!
 
 
@@ -67,7 +67,7 @@ changes to any part of the project, please open an issue to discuss it first.
 Please follow this process; it's the best way to get your work included in the
 project:
 
-1. [Fork](http://help.github.com/fork-a-repo/) the project.
+1. [Fork](https://help.github.com/fork-a-repo/) the project.
 
 2. Clone your fork (`git clone
    https://github.com/<your-username>/mobile-boilerplate.git`).

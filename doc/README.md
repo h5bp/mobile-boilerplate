@@ -1,4 +1,4 @@
-[Mobile Boilerplate homepage](http://html5boilerplate.com/mobile/)
+[Mobile Boilerplate homepage](https://html5boilerplate.com/mobile/)
 
 # Mobile Boilerplate documentation:
 

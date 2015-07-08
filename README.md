@@ -1,12 +1,12 @@
-# [Mobile Boilerplate](http://html5boilerplate.com/mobile/)
+# [Mobile Boilerplate](https://html5boilerplate.com/mobile/)
 
 Mobile Boilerplate is a professional front-end template that helps you build
 fast and robust mobile web applications. Spend more time developing and less
 time reinventing the wheel.
 
 * Source: [https://github.com/h5bp/mobile-boilerplate](https://github.com/h5bp/mobile-boilerplate)
-* Homepage: [http://html5boilerplate.com/mobile/](http://html5boilerplate.com/mobile/)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+* Homepage: [https://html5boilerplate.com/mobile/](http://html5boilerplate.com/mobile/)
+* Twitter: [@h5bp](https://twitter.com/h5bp)
 
 
 ## Quick start
@@ -37,7 +37,7 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 * An optimized Google Analytics snippet.
 * Apache server caching, compression, and other configuration defaults for
   Grade-A performance.
-* Cross-domain Ajax.
+* Cross-domain AJAX.
 * "Delete-key friendly." Easy to strip out parts you don't need.
 * Extensive inline and accompanying documentation.
 
