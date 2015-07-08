@@ -1,4 +1,4 @@
-[Mobile Boilerplate homepage](http://html5boilerplate.com/mobile/) | [Documentation
+[Mobile Boilerplate homepage](https://html5boilerplate.com/mobile/) | [Documentation
 table of contents](README.md)
 
 # Extend and customise Mobile Boilerplate
@@ -16,8 +16,8 @@ The line of code below in the .htaccess file could prevent content transcoders f
 `Cache-Control: no-transform`
 
 Read more at the articles below:
-[http://mobiforge.com/developing/blog/responsible-reformatting](http://mobiforge.com/developing/blog/responsible-reformatting)
-[http://mobiforge.com/developing/story/setting-http-headers-advise-transcoding-proxies](http://mobiforge.com/developing/story/setting-http-headers-advise-transcoding-proxies)
+[mobiforge.com/developing/blog/responsible-reformatting](http://mobiforge.com/developing/blog/responsible-reformatting)
+[mobiforge.com/developing/story/setting-http-headers-advise-transcoding-proxies](http://mobiforge.com/developing/story/setting-http-headers-advise-transcoding-proxies)
 
 ### Server side redirection script
 
@@ -58,9 +58,6 @@ AddType application/java-archive            jar
 AddType application/x-java-archive          jar
 AddType text/vnd.sun.j2me.app-descriptor    jad
 ```
-
-* [Apache configuration for mobile application download](https://bit.ly/SJJCND)
-* [How to enable OTA (Over The Air) SIS install from your website](https://bit.ly/ORTLLA)
 
 ## DNS prefetching
 
