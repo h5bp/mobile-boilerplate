@@ -317,7 +317,7 @@
      */
 
     MBP.enableActive = function() {
-        document.addEventListener('touchstart', function() {}, false);
+        addEvt(document, 'touchstart', function() {}, false);
     };
 
     /**
