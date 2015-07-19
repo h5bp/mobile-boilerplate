@@ -87,7 +87,7 @@ is increased on a mobile platform where DNS latency can be greater.
 #### Disable implicit prefetching
 
 ```html
-<meta http-equiv="x-dns-prefetch-control" content="off">
+<meta http-equiv="x-dns-prefetch-control" content="off" />
 ```
 
 Even with X-DNS-Prefetch-Control meta tag (or http header) browsers will still
@@ -104,8 +104,8 @@ server or a CDN that hosts content that may not be present on every page of
 your site, for example) then you can queue up a domain name to be prefetched.
 
 ```html
-<link rel="dns-prefetch" href="//example.com">
-<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//example.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
 ```
 
 You can use as many of these as you need, but it's best if they are all
@@ -119,20 +119,20 @@ act on them ASAP.
 Amazon S3:
 
 ```html
-<link rel="dns-prefetch" href="//s3.amazonaws.com">
+<link rel="dns-prefetch" href="//s3.amazonaws.com" />
 ```
 
 Google APIs:
 
 ```html
-<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
 ```
 
 Microsoft Ajax Content Delivery Network:
 
 ```html
-<link rel="dns-prefetch" href="//ajax.microsoft.com">
-<link rel="dns-prefetch" href="//ajax.aspnetcdn.com">
+<link rel="dns-prefetch" href="//ajax.microsoft.com" />
+<link rel="dns-prefetch" href="//ajax.aspnetcdn.com" />
 ```
 
 ### Browser support for DNS prefetching
@@ -155,7 +155,7 @@ on blogs.msdn.com)
 [Learn how to make a sitemap](http://www.sitemaps.org/protocol.html)
 
 ```html
-<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 ```
 
 ### Hide pages from search engines
@@ -165,7 +165,7 @@ allow search engines to index your "Contact Us" or "Complaints" page if you
 value your sanity. This is an HTML-centric way of achieving that.
 
 ```html
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex" />
 ```
 
 **_WARNING:_** DO NOT INCLUDE ON PAGES THAT SHOULD APPEAR IN SEARCH ENGINES.
@@ -180,7 +180,7 @@ parameters after a `#` or `?` is used to control the display state of a page.
 the cleaner, more accurate `http://www.example.com/cart.html`.
 
 ```html
-<link rel="canonical" href="">
+<link rel="canonical" href="" />
 ```
 
 ### Official shortlink
@@ -190,7 +190,7 @@ supported at this time. Learn more by reading the [article about shortlinks on
 the Microformats wiki](http://microformats.org/wiki/rel-shortlink).
 
 ```html
-<link rel="shortlink" href="h5bp.com">
+<link rel="shortlink" href="h5bp.com" />
 ```
 
 ## App Stores
@@ -203,7 +203,7 @@ and site have been associated via Google's Webmaster Tools. Read more on
 docs](https://developers.google.com/chrome/web-store/docs/inline_installation).
 
 ```html
-<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID" />
 ```
 
 ### Smart App Banners in iOS 6 Safari
@@ -213,7 +213,7 @@ This bit of code will unintrusively allow the user the option to download your i
 app, or open it with some data about the user's current state on the website.
 
 ```html
-<meta name="apple-itunes-app" content="app-id=APP_ID,app-argument=SOME_TEXT">
+<meta name="apple-itunes-app" content="app-id=APP_ID,app-argument=SOME_TEXT" />
 ```
 
 ## Google Analytics augments
@@ -342,7 +342,7 @@ OSes should use if they customize the display of individual pages in
 their UIs with varying colors.
 
 ```html
-<meta name="theme-color" content="#ff69b4">
+<meta name="theme-color" content="#ff69b4" />
 ```
 
 The `content` attribute extension can take any valid CSS color.
@@ -361,7 +361,7 @@ and [Firefox OS 2.1+](https://twitter.com/ahmednefzaoui/status/49234469849399705
   `-webkit-overflow-scrolling: touch`.
 
 * Automatic telephone number detection prevention for iOS and Android using
-  `<meta name="format-detection" content="telephone=no">`.
+  `<meta name="format-detection" content="telephone=no" />`.
   [Safari HTML Reference Supported Meta Tags](https://developer.apple.com/library/safari/documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html)
 
 * Avoid development/stage websites "leaking" into SERPs (search engine results

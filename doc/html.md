@@ -34,7 +34,7 @@ bytes](https://code.google.com/p/chromium/issues/detail?id=23003).
 ## Mobile viewport
 
 ```html
-<meta name="HandheldFriendly" content="True">
+<meta name="HandheldFriendly" content="True"/>
 ```
 
 The `HandheldFriendly` meta-tag was used initially by older Palm and Blackberry models as well as browsers like AvantGo.
@@ -46,7 +46,7 @@ The `HandheldFriendly` meta-tag was used initially by older Palm and Blackberry 
 Microsoft introduced the `MobileOptimized` tag for the PocketPC.
 
 ```html
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width"/>
 ```
 
 This is more widely supported by modern smartphones, including but not limited to: iOS, Android, Palm Pre, Blackberry, Windows Phone 7.
@@ -62,7 +62,7 @@ a simple setup that strikes a good balance for general use cases.
 Touch Icons can be seen as the favicons of mobile devices and tablets.
 
 ```html
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>
 ```
 
 The main sizes of the icons for IOS are:
@@ -93,7 +93,7 @@ Icons](https://mathiasbynens.be/notes/touch-icons).
 ## Mobile Internet Explorer ClearType Technology
 
 ```html
-<meta http-equiv="cleartype" content="on">
+<meta http-equiv="cleartype" content="on"/>
 ```
 
 Mobile Internet Explorer allows us to activate [ClearType](https://www.microsoft.com/typography/whatiscleartype.mspx) technology for smoothing fonts for easy reading
@@ -101,13 +101,13 @@ Mobile Internet Explorer allows us to activate [ClearType](https://www.microsoft
 ## iOS web app
 
 ```html
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
 ```
 
 Makes the web page run in full screen mode when launched from the home screen icon; also hides the address bar and component bar at the top and bottom of the browser.
 
 ```html
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 ```
 
 Styles the bar at the top of the browser
@@ -115,7 +115,7 @@ Styles the bar at the top of the browser
 ## Canonical link to the desktop version for SEO
 
 ```html
-<link rel="canonical" href="http://www.example.com/" >
+<link rel="canonical" href="http://www.example.com/" />
 ```
 
 Websites with separate URLs for desktop and mobile websites need to have a canonical link on mobile site pointing back to the desktop version for SEO. More information on [Google Webmaster Docs](https://developers.google.com/webmasters/smartphone-sites/details#separateurls).
