@@ -1,3 +1,11 @@
+# Deprecation Note
+
+Mobile Boilerplate is no longer maintained. Please use
+[HTML5 Boilerplate](https://html5boilerplate.com/) as a decent starting point
+for your project.
+
+---
+
 # [Mobile Boilerplate](http://html5boilerplate.com/mobile/)
 
 Mobile Boilerplate is a professional front-end template that helps you build
